@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Монтасир  Миргхани](https://up.htmlacademy.ru/adaptive/20/user/1485429).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
 
 ---
 
