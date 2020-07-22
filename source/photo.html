@@ -237,7 +237,56 @@
         </article>
       </section>
 
-      <section class="photo-upload"></section>
+      <section class="photo-upload">
+        <header class="photo-upload__header">
+          <h2 class="visually-hidden">Загрузка фотографий</h2>
+          <p class="photo-upload__intro">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </header>
+        <div class="photo-upload__wrapper">
+          <div class="photo-upload__form editor-form">
+            <form class="editor-form__form" action="https://echo.htmlacademy.ru" method="get">
+              <figure class="photo-upload__photo photo-upload__photo--source">
+                <picture class="image-source">
+                  <source media="(min-width: 900px)" srcset="https://via.placeholder.com/900x1202?text=picture+source+:+desktop">
+                  <source media="(min-width: 600px)" srcset="https://via.placeholder.com/600x801?text=picture+source+:+tablet">
+                  <img class="image-source__device" src="https://via.placeholder.com/280x374?text=picture+source+:+mobile" srcset="https://via.placeholder.com/280x374?text=picture+source+:+mobile" width="280" height="374" alt="Обработанная фотография">
+                </picture>
+              </figure>
+              <div class="editor-form__tools tool">
+                <div class="tool__crop">
+                  <button class="tool__btn tool__btn--crop" type="button">
+                    <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="crop-svg button">
+                  </button>
+                </div>
+                <div class="tool__fill">
+                  <button class="tool__btn tool__btn--fill" type="button">
+                    <img src="https://via.placeholder.com/48x43" width="48" height="43" alt="fill-svg button">
+                  </button>
+                </div>
+                <div class="tool__contrast">
+                  <button class="tool__btn tool__btn--contrast" type="button">
+                    <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="contrast-svg button">
+                  </button>
+                </div>
+                <div class="tool__range-controls range-controls">
+                  <span class="visually-hidden">Ползунок</span>
+                  <div class="range-controls__scale scale">
+                    <div class="range-controls__slider slider"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-upload__submit">
+                <button class="editor-form__submit editor-form__submit--btn" type="submit">Запостить</button>
+              </div>
+              <div class="photo-upload__cancel">
+                <button class="editor-form__cancel editor-form__cancel--btn" type="button">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
