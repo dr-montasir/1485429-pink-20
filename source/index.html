@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк — Главная</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -133,16 +134,16 @@
             <thead class="list-table__tablehead tablehead">
               <tr class="list-table__tablerow">
                 <th class="tablehead__item">
-                  <div class="tablehead__title">head-1</div>
-                  <div class="tablehead__price">0,00 <span class="tablehead__price-unit">USD</span></div>
+                  <div class="tablehead__title">База</div>
+                  <div class="tablehead__price">1,99 <span class="tablehead__price-unit">USD</span></div>
                 </th>
                 <th class="tablehead__item tablehead__item--hit">
-                  <div class="tablehead__title">СТАНДАРТ</div>
+                  <div class="tablehead__title">Стандарт</div>
                   <div class="tablehead__price">3,99 <span class="tablehead__price-unit">USD</span></div>
                 </th>
                 <th class="tablehead__item">
-                  <div class="tablehead__title">head-3</div>
-                  <div class="tablehead__price">0,00 <span class="tablehead__price-unit">USD</span></div>
+                  <div class="tablehead__title">Анлим</div>
+                  <div class="tablehead__price">9,99 <span class="tablehead__price-unit">USD</span></div>
                 </th>
               </tr>
             </thead>
@@ -151,6 +152,7 @@
                 <!-- body-row1-col1 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row1 -->
+                  <span class="visually-hidden">В базовом пакете приложения, <strong>существует </strong></span>
                   <span class="rowcol__row">Розовый фильтр</span>
                   <!-- body-col1 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -158,6 +160,7 @@
                 <!-- body-row1-col2 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row1 -->
+                  <span class="visually-hidden">В стандартном пакете приложения, <strong>существует </strong></span>
                   <span class="rowcol__row">Розовый фильтр</span>
                   <!-- body-col2 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -165,6 +168,7 @@
                 <!-- body-row1-col3 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row1 -->
+                  <span class="visually-hidden">В анлимитном пакете приложения, <strong>существует </strong></span>
                   <span class="rowcol__row">Розовый фильтр</span>
                   <!-- body-col3 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -174,6 +178,7 @@
                 <!-- body-row2-col1 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row2 -->
+                  <span class="visually-hidden">В базовом пакете приложения, <strong>не существуют </strong></span>
                   <span class="rowcol__row">Смайлики</span>
                   <!-- body-col1 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/27x27" alt="feature-svg-no"></span>
@@ -181,6 +186,7 @@
                 <!-- body-row2-col2 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row2 -->
+                  <span class="visually-hidden">В стандартном пакете приложения, <strong>существуют </strong></span>
                   <span class="rowcol__row">Смайлики</span>
                   <!-- body-col2 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -188,6 +194,7 @@
                 <!-- body-row2-col3 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row2 -->
+                  <span class="visually-hidden">В анлимитном пакете приложения, <strong>существуют </strong></span>
                   <span class="rowcol__row">Смайлики</span>
                   <!-- body-col3 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -197,6 +204,7 @@
                 <!-- body-row3-col1 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row3 -->
+                  <span class="visually-hidden">В базовом пакете приложения, <strong>не существуют </strong></span>
                   <span class="rowcol__row">Комментарии</span>
                   <!-- body-col1 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/27x27" alt="feature-svg-no"></span>
@@ -204,6 +212,7 @@
                 <!-- body-row3-col2 -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row3 -->
+                  <span class="visually-hidden">В стандартном пакете приложения, <strong>не существуют </strong></span>
                   <span class="rowcol__row">Комментарии</span>
                   <!-- body-col2 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/27x27" alt="feature-svg-no"></span>
@@ -211,6 +220,7 @@
                 <!-- body-row3-col3  -->
                 <td class="tablebody__item rowcol">
                   <!-- body-row3 -->
+                  <span class="visually-hidden">В анлимитном пакете приложения, <strong>существуют </strong></span>
                   <span class="rowcol__row">Комментарии</span>
                   <!-- body-col3 -->
                   <span class="rowcol__col"><img src="https://via.placeholder.com/31x21" alt="feature-svg-yes"></span>
@@ -219,16 +229,16 @@
             </tbody>
             <tfoot class="list-table__tablefoot tablefoot visually-hidden">
               <tr class="list-table__tablerow">
-                <td class="tablefoot__item">foot-col1</td>
-                <td class="tablefoot__item">foot-col2</td>
-                <td class="tablefoot__item">foot-col3</td>
+                <td class="tablefoot__item"><span class="hidden">База</span></td>
+                <td class="tablefoot__item"><span class="hidden">Стандарт</span></td>
+                <td class="tablefoot__item"><span class="hidden">Анлим</span></td>
               </tr>
             </tfoot>
           </table>
         </div>
         <div class="price-list__control">
             <div class="price-list__pagination pagination">
-              <button class="price-list__item pagination__item" type="button">
+              <button class="pagination__item" type="button">
                 <span class="visually-hidden">1</span>
                 <img src="https://via.placeholder.com/6x6" width="6" height="6" alt="pag-svg-btn">
               </button>
@@ -270,33 +280,36 @@
         <div class="site-map__iframe iframe">
           <iframe class="iframe__map" src="https://yandex.ru/map-widget/v1/-/CCQln6fbLA" width="320" height="200"></iframe>
         </div>
-        <img class="site-map__img map-image" src="https://via.placeholder.com/320x200?text=Карта" width="320" height="200" alt="Карта">
+        <img class="site-map__img site-map__img--modifer" src="https://via.placeholder.com/320x200?text=Карта" width="320" height="200" alt="Карта">
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">
-          <a class="logo__link" href="index.html">
+        <div class="page-footer__logo">
+          <a class="page-footer__link" href="index.html">
             <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Пинк">
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="">Twitter</a>
+              <a class="social__link social__link--modifer" href="">Twitter</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="">Facebook</a>
+              <a class="social__link social__link--modifer" href="">Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="">YouTube</a>
+              <a class="social__link social__link--modifer" href="">YouTube</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="https://via.placeholder.com/27x34" alt="HTML Academy">
+          </a>
         </div>
       </div>
     </footer>
