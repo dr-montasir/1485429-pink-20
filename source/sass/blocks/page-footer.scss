@@ -1,1 +1,10 @@
-// Page Footer
+/* Page Footer */
+
+.page-footer {
+  background-color: $white;
+  color: $bunting;
+
+  &__logo {
+    height: 40px;
+  }
+}

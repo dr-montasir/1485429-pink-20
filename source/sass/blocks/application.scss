@@ -1,1 +1,10 @@
-// Application
+/* Application */
+
+.application {
+  background-color: $gainsboro-2;
+  color: $white;
+
+  &__download {
+    background-color: $midnight-express;
+  }
+}

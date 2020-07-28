@@ -2,22 +2,27 @@
 
 // Colors
 
-$basic-white: #ffffff;
-$white-smoke: #f2f2f2;
-$white-fifteen-percent: rgba(0, 1, 1, 0.15);
+$white: #ffffff;
+$whitesmoke: #f2f2f2;
 
-$basic-black: #000000;
+$black: #000000;
+$black--030: rgba($black, 0.3);
 
-$basic-jaguar: #252527;
+$jaguar: #252527;
 
-$basic-bunting: #283645;
+$bunting: #283645;
 
 // Cerise ~ Pink
-$basic-cerise: #d22856;
+$cerise: #d22856;
 
-$basic-gainsboro: #dedede;
-$gainsboro-light: #e5e5e5;
+$gainsboro-1: #dedede;
+$gainsboro-2: #e5e5e5;
 
+$midnight-express :#1d2631;
+
+// (0, 1, 1, 0.15)
+$dark-green: #000101;
+$dark-green--015: rgba($dark-green, 0.15);
 $lime-green: #3dc644;
 $jungle-green: #2aab6d;
 
