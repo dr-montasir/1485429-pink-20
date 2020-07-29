@@ -1,0 +1,10 @@
+/* Advantages */
+
+.advantages {
+  outline: 5px solid rgba(green, 0.35);
+  outline-offset: -5px;
+
+  &__wrapper {
+    background-color: $whitesmoke;
+  }
+}

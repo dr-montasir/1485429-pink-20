@@ -1,0 +1,19 @@
+/* Page */
+
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+
+  &__body {
+    min-height: 100%;
+    margin: 0;
+    background-color: $white;
+    color: $black;
+  }
+}

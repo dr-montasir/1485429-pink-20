@@ -1,0 +1,10 @@
+/* Post */
+
+.post {
+  outline: 5px solid rgba(green, 0.35);
+  outline-offset: -5px;
+
+  &__body {
+    background-color: $whitesmoke;
+  }
+}

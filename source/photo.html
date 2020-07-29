@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк — Фото</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -65,8 +66,8 @@
               <span class="post__author">Анна</span>
               <span class="post__time">(5 минут назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
             </div>
@@ -91,8 +92,8 @@
               <span class="post__author">Левон</span>
               <span class="post__time">(5 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
             </div>
@@ -117,8 +118,8 @@
               <span class="post__author">Антон</span>
               <span class="post__time">(12 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Соседи будут рады!
               </p>
             </div>
@@ -143,8 +144,8 @@
               <span class="post__author">Борис</span>
               <span class="post__time">(20 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
             </div>
@@ -169,8 +170,8 @@
               <span class="post__author">Сергей</span>
               <span class="post__time">(25 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Самая кубанская в мире!
               </p>
             </div>
@@ -195,8 +196,8 @@
               <span class="post__author">Максим</span>
               <span class="post__time">(40 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Где снег-то?
               </p>
             </div>
@@ -221,8 +222,8 @@
               <span class="post__author">Надежда</span>
               <span class="post__time">(45 часов назад)</span>
             </header>
-            <div class="post__description description">
-              <p class="post__text">
+            <div class="post__description">
+              <p class="post__text post__text--modifer">
                 Всем GM и взаимные лайки!
               </p>
             </div>
@@ -254,37 +255,37 @@
                   <img class="image-source__device" src="https://via.placeholder.com/280x374?text=picture+source+:+mobile" srcset="https://via.placeholder.com/280x374?text=picture+source+:+mobile" width="280" height="374" alt="Обработанная фотография">
                 </picture>
               </figure>
-              <div class="editor-form__tools tool">
-                <div class="tool__crop">
-                  <button class="tool__btn tool__btn--crop" type="button">
+              <div class="editor-form__tools tools">
+                <div class="tools__crop">
+                  <button class="tools__btn tools__btn--crop" type="button">
                     <span class="visually-hidden">Обрезка</span>
                     <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="crop-svg button">
                   </button>
                 </div>
-                <div class="tool__fill">
-                  <button class="tool__btn tool__btn--fill" type="button">
+                <div class="tools__fill">
+                  <button class="tools__btn tools__btn--fill" type="button">
                     <span class="visually-hidden">Заливка</span>
                     <img src="https://via.placeholder.com/48x43" width="48" height="43" alt="fill-svg button">
                   </button>
                 </div>
-                <div class="tool__contrast">
-                  <button class="tool__btn tool__btn--contrast" type="button">
+                <div class="tools__contrast">
+                  <button class="tools__btn tools__btn--contrast" type="button">
                     <span class="visually-hidden">Контраст</span>
                     <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="contrast-svg button">
                   </button>
                 </div>
-                <div class="tool__range-controls range-controls">
+                <div class="tools__range-controls range-controls">
                   <span class="visually-hidden">Ползунок</span>
-                  <div class="range-controls__scale scale">
-                    <div class="range-controls__slider slider"></div>
+                  <div class="range-controls__scale range-controls__scale--modifer">
+                    <div class="range-controls__slider range-controls__slider--modifer"></div>
                   </div>
                 </div>
               </div>
               <div class="photo-upload__submit">
-                <button class="editor-form__submit editor-form__submit--btn" type="submit">Запостить</button>
+                <button class="editor-form__btn editor-form__btn--submit" type="submit">Запостить</button>
               </div>
-              <div class="photo-upload__cancel">
-                <button class="editor-form__cancel editor-form__cancel--btn" type="reset">Отмена</button>
+              <div class="photo-upload__reset">
+                <button class="editor-form__btn editor-form__btn--reset" type="reset">Отмена</button>
               </div>
             </form>
           </div>
@@ -294,27 +295,30 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">
-          <a class="logo__link" href="index.html">
+        <div class="page-footer__logo">
+          <a class="page-footer__link" href="index.html">
             <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Пинк">
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="">Twitter</a>
+              <a class="social__link social__link--modifer" href="">Twitter</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="">Facebook</a>
+              <a class="social__link social__link--modifer" href="">Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="">YouTube</a>
+              <a class="social__link social__link--modifer" href="">YouTube</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="https://via.placeholder.com/27x34" alt="HTML Academy">
+          </a>
         </div>
       </div>
     </footer>

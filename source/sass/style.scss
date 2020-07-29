@@ -1,1 +1,54 @@
-// Начните писать стили здесь
+// Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+// Blocks: Head & Main Navigation
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+// Blocks: Inside <Main> - index.html
+@import "blocks/page-main.scss";
+@import "blocks/application.scss";
+@import "blocks/download.scss";
+@import "blocks/download-list.scss";
+@import "blocks/advantages.scss";
+@import "blocks/comments.scss";
+@import "blocks/slides.scss";
+@import "blocks/pagination.scss";
+@import "blocks/price-list.scss";
+@import "blocks/list-table.scss";
+@import "blocks/tablehead.scss";
+@import "blocks/tablebody.scss";
+@import "blocks/rowcol.scss";
+@import "blocks/site-contacts.scss";
+@import "blocks/site-map.scss";
+@import "blocks/iframe.scss";
+
+// Blocks: Inside <Main> - photo.html
+@import "blocks/gallery.scss";
+@import "blocks/post.scss";
+@import "blocks/like.scss";
+@import "blocks/photo-upload.scss";
+@import "blocks/editor-form.scss";
+@import "blocks/image-source.scss";
+@import "blocks/tools.scss";
+@import "blocks/range-controls.scss";
+
+// Blocks: Inside <Main> - form.html
+@import "blocks/participant.scss";
+@import "blocks/form.scss";
+@import "blocks/name-info.scss";
+@import "blocks/achievement.scss";
+@import "blocks/contact-info.scss";
+@import "blocks/apps-set.scss";
+@import "blocks/emotion.scss";
+@import "blocks/btn.scss";
+@import "blocks/note.scss";
+
+// Blocks: Inside <Footer>
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
