@@ -8,12 +8,13 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    line-height: 30px;
   }
+}
 
-  &__body {
-    min-height: 100%;
-    margin: 0;
-    background-color: $white;
-    color: $black;
-  }
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  color: $black;
 }
