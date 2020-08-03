@@ -1,0 +1,86 @@
+/* Price Table */
+
+.price-table {
+  border-collapse: separate;
+  border-spacing: 0;
+
+  &__package-title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__package-price,
+  &__package-price-unit {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &__feature-name {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__tabledata:first-child {
+    @media (max-width: $mobile-width-only) {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__tabledata {
+    min-width: 240px;
+  }
+
+  &__tablerow &__tabledata {
+    background-color: $white;
+    border: 2px solid $gainsboro-2;
+    border-right: none;
+    border-bottom: none;
+
+    &:last-child {
+      border-right: 2px solid $gainsboro-2;
+    }
+  }
+
+  &__tablerow:first-child &__tabledata {
+
+    background-color: $bunting;
+    color: $white;
+    border-top: none;
+    border-left: 2px solid $whitesmoke;
+
+    &:first-child {
+      border-left: none;
+      border-bottom: 2px solid $gainsboro-2;
+      background-color: inherit;
+    }
+
+    &:nth-child(2) {
+      border-left: 2px solid $bunting;
+      border-radius: 1px 0 0 0;
+    }
+
+    &:last-child {
+      border-right: 2px solid $bunting;
+      border-radius: 0 1px 0 0;
+    }
+  }
+
+  &__tablerow:nth-child(2) &__tabledata {
+    border-top: none;
+  }
+
+  &__tablerow:last-child &__tabledata {
+    border-bottom: 2px solid $gainsboro-2;
+
+    &:first-child {
+      border-radius: 0 0 0 1px;
+    }
+
+    &:last-child {
+      border-radius: 0 0 1px 0;
+    }
+  }
+}
