@@ -3,84 +3,78 @@
 .price-table {
   border-collapse: separate;
   border-spacing: 0;
+}
 
-  &__package-title {
-    font-weight: 700;
-    font-size: 16px;
+.price-table__package-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.price-table__package-price,
+.price-table__package-price-unit {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.price-table__feature-name {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
+}
 
-  &__package-price,
-  &__package-price-unit {
-    font-weight: 300;
-    font-size: 18px;
-  }
+.price-table__tabledata {
+  min-width: 240px;
+  background-color: $white;
+  border: 2px solid $gainsboro-2;
+  border-right: none;
+  border-bottom: none;
 
-  &__feature-name {
-    @media (min-width: $tablet-width) {
+  &:first-child {
+    @media (max-width: $mobile-width-only) {
       display: none;
     }
   }
 
-  &__tabledata:first-child {
-    @media (max-width: $mobile-width-only) {
-      &:first-child {
-        display: none;
-      }
-    }
+  &:last-child {
+    border-right: 2px solid $gainsboro-2;
   }
+}
 
-  &__tabledata {
-    min-width: 240px;
-  }
+.price-table__tablerow:first-child .price-table__tabledata {
+  background-color: $bunting;
+  color: $white;
+  border-top: none;
+  border-left: 2px solid $whitesmoke;
 
-  &__tablerow &__tabledata {
-    background-color: $white;
-    border: 2px solid $gainsboro-2;
-    border-right: none;
-    border-bottom: none;
-
-    &:last-child {
-      border-right: 2px solid $gainsboro-2;
-    }
-  }
-
-  &__tablerow:first-child &__tabledata {
-
-    background-color: $bunting;
-    color: $white;
-    border-top: none;
-    border-left: 2px solid $whitesmoke;
-
-    &:first-child {
-      border-left: none;
-      border-bottom: 2px solid $gainsboro-2;
-      background-color: inherit;
-    }
-
-    &:nth-child(2) {
-      border-left: 2px solid $bunting;
-      border-radius: 1px 0 0 0;
-    }
-
-    &:last-child {
-      border-right: 2px solid $bunting;
-      border-radius: 0 1px 0 0;
-    }
-  }
-
-  &__tablerow:nth-child(2) &__tabledata {
-    border-top: none;
-  }
-
-  &__tablerow:last-child &__tabledata {
+  &:first-child {
+    border-left: none;
     border-bottom: 2px solid $gainsboro-2;
+    background-color: inherit;
+  }
 
-    &:first-child {
-      border-radius: 0 0 0 1px;
-    }
+  &:nth-child(2) {
+    border-left: 2px solid $bunting;
+    border-radius: 1px 0 0 0;
+  }
 
-    &:last-child {
-      border-radius: 0 0 1px 0;
-    }
+  &:last-child {
+    border-right: 2px solid $bunting;
+    border-radius: 0 1px 0 0;
+  }
+}
+
+.price-table__tablerow:nth-child(2) .price-table__tabledata {
+  border-top: none;
+}
+
+.price-table__tablerow:last-child .price-table__tabledata {
+  border-bottom: 2px solid $gainsboro-2;
+
+  &:first-child {
+    border-radius: 0 0 0 1px;
+  }
+
+  &:last-child {
+    border-radius: 0 0 1px 0;
   }
 }
