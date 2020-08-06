@@ -2,36 +2,35 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Пинк — Главная</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+        <div class="main-nav__control">
+          <a class="main-nav__logo" href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Пинк">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -45,29 +44,29 @@
             Взгляните на жизнь иначе!
           </p>
         </header>
-        <div class="application__download download">
-          <a class="download__button" href="">Скачать приложение</a>
-          <ul class="application__list download-list">
-            <li class="download-list__item">
-              <a class="download-list__logo" href="">
+        <div class="application__download">
+          <a class="application__button" href="">Скачать приложение</a>
+          <ul class="application__list">
+            <li class="application__item">
+              <a class="application__os-logo" href="">
                 <span class="visually-hidden">OS X</span>
                 <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Apple">
               </a>
             </li>
-            <li class="download-list__item">
-              <a class="download-list__logo" href="">
+            <li class="application__item">
+              <a class="application__os-logo" href="">
                 <span class="visually-hidden">Android</span>
                 <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Android">
               </a>
             </li>
-            <li class="download-list__item">
-              <a class="download-list__logo" href="">
+            <li class="application__item">
+              <a class="application__os-logo" href="">
                 <span class="visually-hidden">Windows</span>
                 <img src="https://via.placeholder.com/44x41" alt="Windows Phone">
               </a>
             </li>
           </ul>
-          <p class="download__text">
+          <p class="application__available">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
