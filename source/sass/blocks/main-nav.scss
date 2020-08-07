@@ -50,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -60,6 +61,12 @@
 }
 
 .main-nav__toggle {
+  margin: 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -82,7 +89,7 @@
     height: 40px;
 
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
