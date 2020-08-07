@@ -1,8 +1,15 @@
 /* Price Table */
 
 .price-table {
+  margin: 0 auto;
+
   border-collapse: separate;
   border-spacing: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -259px;
+    margin-right: -259px;
+  }
 }
 
 .price-table__package-title {
