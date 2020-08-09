@@ -6,9 +6,8 @@
   border-collapse: separate;
   border-spacing: 0;
 
-  @media (max-width: $tablet-width) {
-    margin-left: -259px;
-    margin-right: -259px;
+  @media (max-width: $mobile-width-only) {
+    transform: translateX(-259px);
   }
 }
 
@@ -94,11 +93,9 @@
   grid-template-columns: 1fr;
 }
 
-.price-table__is-included {
-  display: flex;
-  flex-template-rows: 1fr;
-
-  justify-content: center;
+.price-table__feature img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: $mobile-width-only) {
