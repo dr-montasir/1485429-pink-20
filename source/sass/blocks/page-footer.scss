@@ -1,6 +1,9 @@
 /* Page Footer */
 
 .page-footer {
+  outline: 5px solid rgba(red, 0.35);
+  outline-offset: -5px;
+
   background-color: $white;
   color: $bunting;
 }

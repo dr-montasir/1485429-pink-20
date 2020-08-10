@@ -2,36 +2,35 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Пинк — Форма</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+        <div class="main-nav__control">
+          <a class="main-nav__logo" href="index.html">
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 

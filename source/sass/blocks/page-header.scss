@@ -1,13 +1,11 @@
 /* Page Header */
 
 .page-header {
+  margin: 0;
+
   outline: 5px solid rgba(red, 0.35);
   outline-offset: -5px;
 
   background-color: $black--030;
   color: $white;
-}
-
-.page-header__logo {
-  height: 23px;
 }

@@ -1,1 +1,166 @@
-// Main Nav
+/* Main Nav */
+
+.main-nav {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 940px;
+
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.main-nav__control {
+  outline: 5px solid rgba(blue, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.main-nav__list {
+  outline: 5px solid rgba(yellow, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 -1px 0 0 $black;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: none;
+  }
+}
+
+.main-nav__list-item {
+  background-color: $bunting;
+
+  border-top: 1px solid $white--015;
+  border-bottom: 1px solid $black;
+
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+
+    border: none;
+  }
+}
+
+.main-nav__list-item a {
+  position: relative;
+  display: block;
+
+  color: $white;
+
+  padding: 23px 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0;
+
+    font-weight: 400;
+    line-height: 18px;
+
+    color: $white;
+  }
+
+  &:hover {
+    color: $cerise;
+  }
+
+  &:focus {
+    color: $cerise;
+  }
+
+  &:active {
+    color: $cerise--030;
+  }
+}
+
+.main-nav__list-item--active a {
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 2px 0 0 $white;
+
+    &:hover {
+      box-shadow: 0 2px 0 0 $cerise;
+    }
+  }
+}
+
+.main-nav__toggle {
+  margin: 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo {
+  outline: 5px solid rgba(green, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+
+  width: 74px;
+  height: 23px;
+
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    height: 40px;
+
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}

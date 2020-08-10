@@ -1,5 +1,13 @@
-//Price List
+/* Price List */
 
 .price-list {
   background-color: $whitesmoke;
+}
+
+.price-list__table-wrapper {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    width: 320px;
+    overflow: hidden;
+  }
 }
