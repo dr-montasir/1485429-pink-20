@@ -8,8 +8,75 @@
   color: $white;
 }
 
+.application__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.application__header {
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  width: 280px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 0 10px;
+  }
+
+  &--center {
+    outline: 5px solid rgba(red, 0.35);
+    outline-offset: -5px;
+
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 747px;
+    }
+  }
+}
+
 .application__intro {
   margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  &--mod-text {
+    outline: 5px solid rgba(green, 0.35);
+    outline-offset: -5px;
+
+    line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+
+      font-size: 50px;
+      line-height: 68px;
+
+      width: 500px;
+    }
+  }
 }
 
 .application__download {
@@ -126,6 +193,12 @@
   margin: 0;
   display: flex;
   align-items: center;
+
+  color: $white;
+
+  &:focus {
+    box-shadow: 0 5px 0 $white--075;
+  }
 }
 
 .application__available {
