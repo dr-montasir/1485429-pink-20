@@ -19,105 +19,61 @@
   }
 }
 
-.effect_wrapper {
+.effect__day {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 310px;
+    min-height: 330px;
 
-    display: grid;
-    grid-template-columns: 238px 1fr;
-    gap: 72px;
+    background: url("../img/icon-timer-tablet@1x.svg") 20px 54px no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
+    padding: 0 46px 0 380px;
+    width: 534px;
+    min-height: 429px;
 
-    width: 940px;
-
-    display: grid;
-    grid-template-columns: 298px 1fr;
-    gap: 71px;
-  }
-}
-
-.effect__clock {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
-
-  @media (min-width: $tablet-width) {
-    margin: 54px 0 0 0;
-    width: 238px;
-    height: 276px;
-    background: url("../img/icon-timer-tablet@1x.svg") no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 17px;
-    width: 298px;
-    height: 345px;
-    background: url("../img/icon-timer-desktop@1x.svg") no-repeat;
-  }
-}
-
-.effect__day {
-  outline: 5px solid rgba(blue, 0.35);
-  outline-offset: -5px;
-
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 54px;
-    margin-bottom: 0;
-    padding-top: 48px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 17px;
-    margin-bottom: 0;
-    padding-top: 98px;
+    background: url("../img/icon-timer-desktop@1x.svg") 11px 17px no-repeat;
   }
 }
 
 .effect__title {
   @media (min-width: $tablet-width) {
+    margin: 0 142px 0 0;
+    padding-top: 92px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-
-    margin: 0 142px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 272px 0 0;
+    margin: 0;
+    padding-top: 115px;
     line-height: 30px;
   }
 }
 
 .effect__text {
   @media (min-width: $tablet-width) {
+    margin: 0 20px 0 0;
+    padding: 12px 0;
     word-spacing: 4px;
     font-size: 14px;
     line-height: 24px;
-
-    margin-top: 4px;
-    margin-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 36px 0 0;
+    margin: 0;
+    padding: 22px 0 26px 0;
     font-size: 18px;
     line-height: 30px;
-
-    margin-top: 22px;
-    margin-bottom: 30px;
   }
 }
 
 .effect__link {
-  margin: 0 36px 0 0;
+  margin: 0;
+  display: inline-block;
   color: $cerise;
   text-decoration: underline;
 
@@ -133,5 +89,15 @@
   &:active {
     color: $cerise--030;
     text-decoration: underline;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 116px;
   }
 }

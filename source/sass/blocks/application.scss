@@ -51,7 +51,7 @@
   margin: 0;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 1.2;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -106,7 +106,7 @@
 
 .application__button {
   background-color: transparent;
-  border-radius: 29px;
+  border-radius: 30px;
   border: 3px solid $white;
   display: block;
   cursor: pointer;
@@ -126,20 +126,17 @@
     background-color: $white;
     color: $cerise;
     box-shadow: 0 5px 7px $black--075;
-    border-radius: 30px;
   }
 
   &:focus {
     background-color: $white;
     color: $cerise;
     box-shadow: 0 5px 7px $black--075;
-    border-radius: 30px;
   }
 
   &:active {
     background-color: $white;
     color: $cerise--030;
-    border-radius: 30px;
   }
 }
 
