@@ -119,12 +119,21 @@
       <section class="comments">
         <h2 class="visually-hidden">Комментарии пользователя «Пинк»</h2>
         <div class="comments__wrapper">
-          <div class="comments__slides slides">
-            <blockquote class="slides__item">
+          <blockquote class="comments__slideshow">
+            <button class="comments__arrow comments__arrow--left">
+              <span class="visually-hidden">прокрутка влево</span>
+            </button>
+            <div class="comments__body">
               <h3 class="comments__user">Николай Петров</h3>
               <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </div>
+              <small class="comments__author">
+                25 лет, водитель трамвая
+              </small>
+            </div>
+            <button class="comments__arrow comments__arrow--right">
+              <span class="visually-hidden">прокрутка вправо</span>
+            </button>
+          </blockquote>
           <div class="comments__control">
             <div class="comments__pagination pagination">
               <button class="pagination__item pagination__item--active" type="button">
