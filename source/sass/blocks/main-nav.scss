@@ -30,11 +30,6 @@
 
   justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
