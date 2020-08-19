@@ -22,8 +22,27 @@
   background-color: $bunting--030;
   border-radius: 50%;
 
+  &:hover,
+  &:focus {
+    background-color: $bunting--060;
+  }
+
+  &:active {
+    background-color: $bunting--010;
+  }
+
+  // Slider bullet active no hovers
+
   &--active {
     background-color: $white;
     box-shadow: 0 0 0 3px $bunting;
+
+    &:hover {
+      pointer-events: none;
+    }
+
+    &:focus {
+      background-color: $white;
+    }
   }
 }
