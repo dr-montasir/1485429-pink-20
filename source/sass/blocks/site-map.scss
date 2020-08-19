@@ -10,20 +10,20 @@
     z-index: 1;
 
     width: 100%;
+    height: 69px;
 
-    @media (max-width: $mobile-width-only) {
-      height: 69px;
-      background: url("../img/bg-map-triangle-white-mobile.svg") center top no-repeat;
-    }
+    background-image: url("../img/bg-map-triangle-white-mobile.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       height: 93px;
-      background: url("../img/bg-map-triangle-white-tablet.svg") center top no-repeat;
+      background-image: url("../img/bg-map-triangle-white-tablet.svg");
     }
 
     @media (min-width: $desktop-width) {
       height: 123px;
-      background: url("../img/bg-map-triangle-white-desktop.svg") center top no-repeat;
+      background-image: url("../img/bg-map-triangle-white-desktop.svg");
     }
   }
 }
@@ -34,14 +34,11 @@
   border: 0;
 
   width: 100%;
+  height: 235px;
 
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-
-  @media (max-width: $mobile-width-only) {
-    height: 235px;
-    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
-  }
 
   @media (min-width: $tablet-width) {
     height: 298px;
