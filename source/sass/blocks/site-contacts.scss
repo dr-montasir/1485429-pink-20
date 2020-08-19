@@ -1,1 +1,151 @@
-// Site Contacts
+/* Site Contacts */
+
+.site-contacts {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.site-contacts__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: min-content min-content;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+  }
+}
+
+.site-contacts__header {
+  margin: 0 auto;
+  padding: 33px 0 30px 0;
+
+  width: 250px;
+  line-height: 1.2;
+  color: $bunting;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 39px 0;
+
+    width: 400px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0 49px 0;
+
+    width: 500px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.site-contacts__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.site-contacts__item {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 27px;
+    width: 280px;
+
+    &:first-child {
+      padding-bottom: 23px;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+
+    width: 310px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 30px;
+    padding-bottom: 0;
+
+    &:nth-child(n + 4) {
+      padding-top: 33px;
+    }
+
+    width: 245px;
+
+    &--phone {
+      order: 1;
+    }
+
+    &--email {
+      order: 3;
+    }
+
+    &--address {
+      order: 2;
+    }
+  }
+}
+
+.site-contacts__title {
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.site-contacts__text {
+  margin: 0 auto;
+
+  width: 250px;
+
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+.site-contacts__data {
+  color: $cerise;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $bunting;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $bunting--030;
+  }
+}

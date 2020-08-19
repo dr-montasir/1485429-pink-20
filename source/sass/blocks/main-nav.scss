@@ -36,6 +36,101 @@
   }
 }
 
+.main-nav__logo {
+  outline: 5px solid rgba(green, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+
+  width: 74px;
+  height: 23px;
+
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    height: 40px;
+
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+.main-nav__toggle {
+  margin: 23px 0;
+
+  width: 23px;
+  height: 23px;
+
+  border: none;
+
+  background: url("../img/icon-menu-group.svg") no-repeat;
+  background-position: 0 -87px;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+
+  cursor: pointer;
+
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 -29px;
+  }
+
+  &:active {
+    background-position: 0 -58px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 23px;
+  height: 23px;
+
+  cursor: pointer;
+
+  background-position: 0 -87px;
+
+  &:hover {
+    background-position: 0 -115px;
+  }
+
+  &:active {
+    background-position: 0 -143px;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .main-nav__list {
   outline: 5px solid rgba(yellow, 0.35);
   outline-offset: -5px;
@@ -121,46 +216,5 @@
     &:hover {
       box-shadow: 0 2px 0 0 $cerise;
     }
-  }
-}
-
-.main-nav__toggle {
-  margin: 23px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 43px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.main-nav__logo {
-  outline: 5px solid rgba(green, 0.35);
-  outline-offset: -5px;
-
-  margin: 0;
-
-  width: 74px;
-  height: 23px;
-
-  padding-top: 22px;
-  padding-bottom: 21px;
-
-  @media (min-width: $tablet-width) {
-    width: 145px;
-    height: 40px;
-
-    padding-top: 27px;
-    padding-bottom: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 320px;
-    height: 40px;
-
-    padding-top: 27px;
-    padding-bottom: 43px;
   }
 }

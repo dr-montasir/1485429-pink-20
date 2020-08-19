@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
+    <!-- Header -->
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__control">
@@ -33,7 +34,9 @@
         </ul>
       </nav>
     </header>
+    <!-- /End Header -->
 
+    <!-- Main -->
     <main class="page-main">
       <h1 class="visually-hidden">Пинк — cайт фотоприложения для раскрашивания серых будней</h1>
 
@@ -77,14 +80,14 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages__title-wrapper">
-          <h2 class="advantages__main-title">
+        <header class="advantages__header">
+          <h2 class="advantages__header-text">
             Устали от серости мегаполиса?
-            <span class="advantages__sub-title">
-              Нам есть, что вам предложить!
-            </span>
           </h2>
-        </div>
+          <p class="advantages__header-text">
+            Нам есть, что вам предложить!
+          </p>
+        </header>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--cheer">
@@ -116,12 +119,21 @@
       <section class="comments">
         <h2 class="visually-hidden">Комментарии пользователя «Пинк»</h2>
         <div class="comments__wrapper">
-          <div class="comments__slides slides">
-            <blockquote class="slides__item">
+          <blockquote class="comments__slideshow">
+            <button class="comments__arrow comments__arrow--left">
+              <span class="visually-hidden">прокрутка влево</span>
+            </button>
+            <div class="comments__body">
               <h3 class="comments__user">Николай Петров</h3>
               <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </div>
+              <small class="comments__author">
+                25 лет, водитель трамвая
+              </small>
+            </div>
+            <button class="comments__arrow comments__arrow--right">
+              <span class="visually-hidden">прокрутка вправо</span>
+            </button>
+          </blockquote>
           <div class="comments__control">
             <div class="comments__pagination pagination">
               <button class="pagination__item pagination__item--active" type="button">
@@ -296,32 +308,38 @@
       </section>
 
       <section class="site-contacts">
-        <header class="site-contacts__header">Остались вопросы? Свяжитесь с нами!</header>
-        <div class="site-contacts__item site-contacts__item--phone">
-          <h3 class="site-contacts__title">Звоните:</h3>
-          <p class="site-contacts__text">
-            <a class="site-contacts__data site-contacts__data--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </p>
-        </div>
-        <div class="site-contacts__item site-contacts__item--email">
-          <h3 class="site-contacts__title">Пишите:</h3>
-          <p class="site-contacts__text">
-            <a class="site-contacts__data site-contacts__data--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </div>
-        <div class="site-contacts__item site-contacts__item--address">
-          <h3 class="site-contacts__title">Приезжайте в гости:</h3>
-          <p class="site-contacts__text">
-            <a class="site-contacts__data site-contacts__data--address" href="https://yandex.ru/maps/-/CCQln6f6XA">ул. Большая Конюшенная, 19/8</a>
-          </p>
+        <div class="site-contacts__wrapper">
+          <header class="site-contacts__header">Остались вопросы? Свяжитесь с нами!</header>
+          <ul class="site-contacts__list">
+            <li class="site-contacts__item site-contacts__item--phone">
+              <h3 class="site-contacts__title">Звоните:</h3>
+              <p class="site-contacts__text">
+                <a class="site-contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </li>
+            <li class="site-contacts__item site-contacts__item--email">
+              <h3 class="site-contacts__title">Пишите:</h3>
+              <p class="site-contacts__text">
+                <a class="site-contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="site-contacts__item site-contacts__item--address">
+              <h3 class="site-contacts__title">Приезжайте в гости:</h3>
+              <p class="site-contacts__text">
+                <a class="site-contacts__data" href="https://yandex.ru/maps/-/CCQtaVemcB">ул. Большая Конюшенная, 19/8</a>
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="site-map">
-        <iframe class="site-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQln6fbLA" title="ул. Большая Конюшенная, 19/8"></iframe>
+        <iframe class="site-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQtaVemcB" title="ул. Большая Конюшенная, 19/8"></iframe>
       </section>
     </main>
+    <!-- /End Main -->
 
+    <!-- Footer -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
@@ -329,19 +347,17 @@
             <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Пинк">
           </a>
         </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--mod-state" href="">Twitter</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--mod-state" href="">Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--mod-state" href="">YouTube</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--mod-state" href="">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mod-state" href="">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mod-state" href="">YouTube</a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
@@ -351,5 +367,10 @@
         </div>
       </div>
     </footer>
+    <!-- /End Footer -->
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <!-- /End Scripts -->
   </body>
 </html>

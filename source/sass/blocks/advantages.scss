@@ -3,8 +3,33 @@
 .advantages {
   outline: 5px solid rgba(green, 0.35);
   outline-offset: -5px;
+
+  color: $bunting;
+}
+
+.advantages__header {
+  text-align: center;
+}
+
+.advantages__header-text {
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .advantages__wrapper {
   background-color: $whitesmoke;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.advantages__title {
+  color: $black;
+
+  font-size: 18px;
+  font-weight: 700;
 }

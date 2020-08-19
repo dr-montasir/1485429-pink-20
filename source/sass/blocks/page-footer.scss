@@ -8,6 +8,27 @@
   color: $bunting;
 }
 
+.page-footer__wrapper {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .page-footer__logo {
   height: 40px;
+}
+
+.page-footer__social {
+  outline: 5px solid rgba(blue, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

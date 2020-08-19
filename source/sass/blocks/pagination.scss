@@ -1,1 +1,48 @@
-// Pagination
+/* Pagination */
+
+.pagination {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__item {
+  padding: 0;
+  border: none;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: $bunting--030;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $bunting--060;
+  }
+
+  &:active {
+    background-color: $bunting--010;
+  }
+
+  // Slider bullet active no hovers
+
+  &--active {
+    background-color: $white;
+    box-shadow: 0 0 0 3px $bunting;
+
+    &:hover {
+      pointer-events: none;
+    }
+
+    &:focus {
+      background-color: $white;
+    }
+  }
+}
