@@ -2,21 +2,24 @@
 
 .social {
   margin: 0;
-  padding: 40px 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  padding: 40px 20px;
+
   gap: 14px;
 
   @media (min-width: $desktop-width) {
     gap: 11px;
-    padding: 74px 0;
+    padding: 74px 20px;
   }
 }
 
-.social__item {
-  fill: $cerise;
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-image: url("../img/icon-social-group.svg");
+  background-repeat: no-repeat;
+  background-position-x: 0;
 
   border: 3px solid $bunting--010;
   border-radius: 50%;
@@ -27,37 +30,30 @@
   }
 
   &:active {
-    fill: $cerise--030;
     border: 3px solid $bunting--010;
   }
-}
-
-.social__link {
-  display: block;
 
   &--twitter {
-    padding: 13px 14px 11px 16px;
+    background-position-y: 0;
+
+    &:hover {
+      background-position-y: -40px;
+    }
   }
 
   &--facebook {
-    padding: 16px 19px 8px 20px;
+    background-position-y: -81px;
+
+    &:hover {
+      background-position-y: -125px;
+    }
   }
 
   &--youtube {
-    padding: 13px 14px 11px 19px;
-  }
+    background-position-y: -167px;
 
-  @media (min-width: $desktop-width) {
-    &--twitter {
-      padding: 10px 14px 8px 16px;
-    }
-
-    &--facebook {
-      padding: 13px 19px 5px 20px;
-    }
-
-    &--youtube {
-      padding: 10px 14px 8px 19px;
+    &:hover {
+      background-position-y: -206px;
     }
   }
 }
