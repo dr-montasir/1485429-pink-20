@@ -1,7 +1,63 @@
 /* Social */
 
 .social {
+  margin: 0;
+  padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+    padding: 74px 0;
+  }
+}
+
+.social__item {
+  fill: $cerise;
+
+  border: 3px solid $bunting--010;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $bunting;
+  }
+
+  &:active {
+    fill: $cerise--030;
+    border: 3px solid $bunting--010;
+  }
+}
+
+.social__link {
+  display: block;
+
+  &--twitter {
+    padding: 13px 14px 11px 16px;
+  }
+
+  &--facebook {
+    padding: 16px 19px 8px 20px;
+  }
+
+  &--youtube {
+    padding: 13px 14px 11px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--twitter {
+      padding: 10px 14px 8px 16px;
+    }
+
+    &--facebook {
+      padding: 13px 19px 5px 20px;
+    }
+
+    &--youtube {
+      padding: 10px 14px 8px 19px;
+    }
+  }
 }

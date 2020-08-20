@@ -1,1 +1,14 @@
-// Copyright
+/* Copyright */
+
+.copyright__link {
+  fill: $cerise;
+
+  &:hover,
+  &:focus {
+    fill: $bunting;
+  }
+
+  &:active {
+    fill: $bunting--030;
+  }
+}
