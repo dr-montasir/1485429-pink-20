@@ -87,6 +87,26 @@
 
     width: 22px;
     height: 41px;
+
+    padding: 0;
+    border: none;
+
+    background-color: inherit;
+
+    fill: $bunting--030;
+
+    &:hover,
+    &:focus {
+      fill: $bunting--060;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      fill: $bunting--010;
+    }
   }
 }
 
