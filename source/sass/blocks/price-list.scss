@@ -2,6 +2,19 @@
 
 .price-list {
   background-color: $whitesmoke;
+
+  padding-top: 128px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 112px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+    padding-bottom: 96px;
+  }
 }
 
 .price-list__table-wrapper {
@@ -9,5 +22,13 @@
     margin: 0 auto;
     width: 320px;
     overflow: hidden;
+  }
+}
+
+.price-list__control {
+  padding-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
