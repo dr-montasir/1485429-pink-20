@@ -11,12 +11,16 @@
 .comments__wrapper {
   margin: 0 auto;
 
-  padding: 0 20px;
+  padding: 0 20px 24px 20px;
 
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
+    padding: 72px 10px 32px 10px;
     width: 940px;
   }
 }
@@ -24,7 +28,16 @@
 .comments__slideshow {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 114px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
     display: grid;
     grid-template-columns: min-content 1fr min-content;
   }
@@ -34,34 +47,44 @@
   display: flex;
   flex-direction: column;
 
+  color: $bunting;
+
   order: 2;
 }
 
 .comments__user {
+  margin: 0;
+  padding-top: 42px;
+  padding-bottom: 15px;
+
   order: 1;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
-    order: 2;
+    padding-top: 35px;
+    padding-bottom: 3px;
 
+    order: 2;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 2px;
+
     font-size: 24px;
   }
 }
 
 .comments__text {
+  margin: 0;
   order: 2;
 
   font-size: 14px;
   line-height: 30px;
-
-  color: $bunting;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -74,6 +97,7 @@
 }
 
 .comments__author {
+  margin: 0;
   order: 3;
 
   @media (max-width: $mobile-width-only) {
@@ -85,6 +109,8 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    margin-top: 30px;
+
     &--left {
       order: 1;
     }
@@ -121,6 +147,12 @@
 }
 
 .comments__control {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
