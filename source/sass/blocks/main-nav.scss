@@ -45,23 +45,57 @@
   width: 74px;
   height: 23px;
 
-  padding-top: 22px;
-  padding-bottom: 21px;
+  margin-top: 22px;
+  margin-bottom: 21px;
+
+  background-image: url("../img/logo-pink-group.svg");
+  background-repeat: no-repeat;
+  background-position: -71px -17px;
+
+  &:hover,
+  &:focus {
+    background-position: -71px -67px;
+  }
+
+  &:active {
+    background-position: -71px -117px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 145px;
     height: 40px;
 
-    padding-top: 27px;
-    padding-bottom: 42px;
+    margin-top: 27px;
+    margin-bottom: 42px;
+
+    background-position: 0 0;
+
+    &:hover,
+    &:focus {
+      background-position: 0 -50px;
+    }
+
+    &:active {
+      background-position: 0 -100px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 320px;
+    width: 147px;
     height: 40px;
 
-    padding-top: 27px;
-    padding-bottom: 43px;
+    margin: 27px 173px 43px 0;
+
+    background-position: 0 -250px;
+
+    &:hover,
+    &:focus {
+      background-position: 0 -300px;
+    }
+
+    &:active {
+      background-position: 0 -350px;
+    }
   }
 }
 

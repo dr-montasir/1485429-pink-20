@@ -20,7 +20,45 @@
 }
 
 .page-footer__logo {
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 88px;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  width: 145px;
   height: 40px;
+
+  background-image: url("../img/logo-pink-group.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -150px;
+
+  &:hover,
+  &:focus {
+    background-position: 0 -50px;
+  }
+
+  &:active {
+    background-position: 0 -200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+
+    background-position: 0 -400px;
+
+    &:hover,
+    &:focus {
+      background-position: 0 -450px;
+    }
+
+    &:active {
+      background-position: 0 -500px;
+    }
+  }
 }
 
 .page-footer__social {
