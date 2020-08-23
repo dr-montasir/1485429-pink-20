@@ -3,4 +3,41 @@
 .participant {
   outline: 5px solid rgba(red, 0.35);
   outline-offset: -5px;
+
+  color: $bunting;
+}
+
+.participant__header {
+  outline: 5px solid rgba(blue, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+  padding: 44px 20px 42px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 20px 75px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 10px 74px 10px;
+  }
+}
+
+.participant__intro {
+  margin: 0 auto;
+  padding: 0;
+
+  line-height: 30px;
+  max-width: 420px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 50px;
+    max-width: 760px;
+
+    &::after {
+      content: "Пожалуйста, заполните форму ниже:";
+    }
+  }
 }
