@@ -11,17 +11,6 @@
   }
 }
 
-.price-table__package-title {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.price-table__package-price,
-.price-table__package-price-unit {
-  font-weight: 300;
-  font-size: 18px;
-}
-
 .price-table__tabledata {
   background-color: $white;
   border: 2px solid $gainsboro-2;
@@ -40,13 +29,56 @@
   &:last-child {
     border-right: 2px solid $gainsboro-2;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &--hit {
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    @media (max-width: $mobile-width-only) {
+      background-image: url("../img/bg-hit.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-hit.svg");
+    }
+  }
 }
 
 .price-table__tablerow:first-child .price-table__tabledata {
+  padding-top: 17px;
+  padding-bottom: 27px;
+
   background-color: $bunting;
   color: $white;
+
+  text-transform: uppercase;
+
   border-top: none;
   border-left: 2px solid $whitesmoke;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 
   &:first-child {
     background-color: inherit;
@@ -61,6 +93,54 @@
     border-right: 2px solid $bunting;
     border-radius: 0 1px 0 0;
   }
+}
+
+.price-table__package-title {
+  margin-top: -12px;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.price-table__tabledata--hit .price-table__package-title {
+  margin-top: -22px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -29px;
+  }
+}
+
+.price-table__package-hit {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  left: -11px;
+  max-width: 74px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    max-width: 61px;
+    left: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -13px;
+    max-width: 74px;
+  }
+}
+
+.price-table__package-price,
+.price-table__package-price-unit {
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .price-table__tablerow:nth-child(2) .price-table__tabledata {
