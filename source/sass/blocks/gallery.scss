@@ -1,1 +1,39 @@
-// Gallery
+/* Gallery */
+
+.gallery {
+  outline: 5px solid rgba(blue, 0.35);
+  outline-offset: -5px;
+
+  color: $bunting;
+}
+
+.gallery__header {
+  outline: 5px solid rgba(red, 0.35);
+  outline-offset: -5px;
+
+  margin: 0;
+  padding: 45px 20px 50px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 10px 78px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 10px;
+  }
+}
+
+.gallery__intro {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  line-height: 30px;
+  max-width: 420px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 80px;
+    max-width: 640px;
+  }
+}
