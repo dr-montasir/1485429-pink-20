@@ -12,7 +12,7 @@
       <nav class="main-nav">
         <div class="main-nav__control">
           <a class="main-nav__logo" href="index.html">
-            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Пинк">
+            <span class="visually-hidden">Пинк логотип</span>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -120,18 +120,24 @@
         <h2 class="visually-hidden">Комментарии пользователя «Пинк»</h2>
         <div class="comments__wrapper">
           <blockquote class="comments__slideshow">
-            <button class="comments__arrow comments__arrow--left">
-              <span class="visually-hidden">прокрутка влево</span>
-            </button>
             <div class="comments__body">
               <h3 class="comments__user">Николай Петров</h3>
               <p class="comments__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <small class="comments__author">
+              <p class="comments__author">
                 25 лет, водитель трамвая
-              </small>
+              </p>
             </div>
+            <button class="comments__arrow comments__arrow--left">
+              <span class="visually-hidden">прокрутка влево</span>
+              <svg width="22" height="41" viewBox="0 0 22 41">
+                <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
+            </button>
             <button class="comments__arrow comments__arrow--right">
               <span class="visually-hidden">прокрутка вправо</span>
+              <svg width="22" height="41" viewBox="0 0 22 41">
+                <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              </svg>
             </button>
           </blockquote>
           <div class="comments__control">
@@ -166,6 +172,7 @@
               </th>
               <th class="price-table__tabledata price-table__tabledata--hit">
                 <!-- Head 3 -->
+                <div class="price-table__package-hit">Хит</div>
                 <div class="price-table__package-title">Стандарт</div>
                 <div class="price-table__package-price">3,99 <span class="price-table__package-unit">USD</span></div>
               </th>
@@ -344,25 +351,27 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="index.html">
-            <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Пинк">
+            <span class="visually-hidden">Пинк логотип</span>
           </a>
         </div>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--mod-state" href="">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--mod-state" href="">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--mod-state" href="">YouTube</a>
-          </li>
-        </ul>
+        <div class="page-footer__social social">
+          <a class="social__link social__link--twitter" href="">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+          <a class="social__link social__link--facebook" href="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+          <a class="social__link social__link--youtube" href="">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img src="https://via.placeholder.com/27x34" alt="HTML Academy">
+            <svg width="27" height="34" viewBox="0 0 27 34">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+            </svg>
           </a>
         </div>
       </div>

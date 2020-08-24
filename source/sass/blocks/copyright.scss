@@ -1,1 +1,24 @@
-// Copyright
+/* Copyright */
+
+.copyright__link {
+  height: 34px;
+
+  fill: $cerise;
+
+  &:hover,
+  &:focus {
+    fill: $bunting;
+  }
+
+  &:active {
+    fill: $bunting--030;
+  }
+}
+
+.copyright__text {
+  padding-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}

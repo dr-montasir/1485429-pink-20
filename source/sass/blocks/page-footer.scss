@@ -1,34 +1,94 @@
 /* Page Footer */
 
 .page-footer {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
-
   background-color: $white;
   color: $bunting;
 }
 
 .page-footer__wrapper {
   margin: 0 auto;
+  padding: 40px 20px;
 
   display: grid;
   grid-template-rows: min-content min-content min-content;
 
   @media (min-width: $tablet-width) {
+    padding: 37px 20px;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 10px;
+    width: 940px;
   }
 }
 
 .page-footer__logo {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  width: 145px;
   height: 40px;
+
+  background-image: url("../img/logo-pink-group.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -150px;
+
+  &:hover,
+  &:focus {
+    background-position: 0 -50px;
+  }
+
+  &:active {
+    background-position: 0 -200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+
+    background-position: 0 -400px;
+
+    &:hover,
+    &:focus {
+      background-position: 0 -450px;
+    }
+
+    &:active {
+      background-position: 0 -500px;
+    }
+  }
 }
 
 .page-footer__social {
-  outline: 5px solid rgba(blue, 0.35);
-  outline-offset: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  margin: 0;
-  padding: 0;
+  @media (max-width: $mobile-width-only) {
+    padding-top: 38px;
+    padding-bottom: 26px;
+  }
+}
 
-  list-style: none;
+.page-footer__copyright {
+  margin: 0 auto;
+  padding-top: 12px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 10px;
+    justify-content: flex-end;
+  }
 }
