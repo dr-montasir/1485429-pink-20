@@ -33,6 +33,10 @@
   }
 }
 
+.main-nav--opened .main-nav__control {
+  background-color: $bunting;
+}
+
 .main-nav__logo {
   margin: 0;
 
