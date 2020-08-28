@@ -37,3 +37,18 @@
     max-width: 640px;
   }
 }
+
+.gallery__users {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    width: 940px;
+  }
+}
