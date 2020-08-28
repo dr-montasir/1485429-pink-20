@@ -33,6 +33,10 @@
   }
 }
 
+.main-nav--opened .main-nav__control {
+  background-color: $bunting;
+}
+
 .main-nav__logo {
   margin: 0;
 
@@ -148,7 +152,7 @@
 }
 
 .main-nav--closed .main-nav__list {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-width - 1) {
     display: none;
   }
 }
