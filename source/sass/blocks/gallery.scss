@@ -1,9 +1,6 @@
 /* Gallery */
 
 .gallery {
-  outline: 5px solid rgba(blue, 0.35);
-  outline-offset: -5px;
-
   color: $bunting;
 
   font-size: 14px;
@@ -14,9 +11,6 @@
 }
 
 .gallery__header {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
-
   margin: 0;
   padding: 45px 20px 50px 20px;
 
