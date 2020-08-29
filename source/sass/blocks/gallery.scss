@@ -56,8 +56,15 @@
   justify-content: center;
   gap: 20px;
 
+  max-width: 580px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 10px;
     width: 940px;
+    max-width: none;
   }
 }
