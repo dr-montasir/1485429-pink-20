@@ -5,6 +5,77 @@
   outline-offset: -5px;
 }
 
+.post__photo {
+  &--panorama {
+    margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: -7px;
+      max-width: 1200px;
+    }
+  }
+
+  &--panorama img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.post__panorama-sticker {
+  position: absolute;
+
+  width: 100%;
+
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+
+    left: 50%;
+    margin-top: 54px;
+    margin-left: -480px;
+  }
+}
+
+.post__panorama-name {
+  display: inline-block;
+  vertical-align: center;
+
+  margin: 0 20px;
+  padding: 12px 20px 12px 19px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  background-color: $cerise;
+  color: white;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10px;
+  }
+}
+
 .post__body {
   background-color: $whitesmoke;
+
+  &--panorama {
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 940px;
+    }
+  }
+}
+
+.post__body-wrapper {
+  &--panorama {
+    @media (min-width: $desktop-width) {
+      padding: 0 31px 0 27px;
+    }
+  }
 }
