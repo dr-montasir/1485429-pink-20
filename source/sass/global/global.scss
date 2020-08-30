@@ -7,6 +7,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+
+  // Remove extra space below images
+  display: block;
 }
 
 /* Class Visually Hidden */

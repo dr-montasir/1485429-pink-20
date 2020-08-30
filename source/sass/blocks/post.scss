@@ -7,8 +7,6 @@
   margin: 0 auto;
   width: 280px;
 
-  background-color: $whitesmoke;
-
   @media (min-width: $tablet-width) {
     width: 300px;
   }
@@ -16,8 +14,6 @@
   &--panorama {
     width: 100%;
     padding-bottom: 20px;
-
-    background-color: $white;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 50px;
@@ -27,21 +23,18 @@
 
 .post__photo {
   margin: 0 auto;
+}
+
+.post--panorama .post__photo {
   width: 100%;
-  height: auto;
 
-  &--panorama {
-    margin: 0 auto -7px auto;
-
-    @media (min-width: $desktop-width) {
-      max-width: 1200px;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
   }
+}
 
-  &--panorama img {
-    width: 100%;
-    height: auto;
-  }
+.post--panorama img {
+  width: 100%;
 }
 
 .post__panorama-sticker {
@@ -83,22 +76,18 @@
   }
 }
 
-.post__body {
+.post__body,
+.post__like {
+  padding: 0 31px 0 27px;
   background-color: $whitesmoke;
-
-  &--panorama {
-    @media (min-width: $desktop-width) {
-      margin: 0 auto;
-      padding: 30px 0;
-      width: 940px;
-    }
-  }
 }
 
-.post__body-wrapper {
-  &--panorama {
-    @media (min-width: $desktop-width) {
-      padding: 0 31px 0 27px;
-    }
+.post--panorama .post__body,
+.post--panorama .post__like {
+  margin: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 882px;
   }
 }
