@@ -1,16 +1,21 @@
 /* Gallery */
 
 .gallery {
-  outline: 5px solid rgba(blue, 0.35);
-  outline-offset: -5px;
-
   color: $bunting;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+.gallery__post {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr min-content;
 }
 
 .gallery__header {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
-
   margin: 0;
   padding: 45px 20px 50px 20px;
 
@@ -35,5 +40,27 @@
     font-size: 18px;
     padding: 0 80px;
     max-width: 640px;
+  }
+}
+
+.gallery__users {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  max-width: 580px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    width: 940px;
+    max-width: none;
   }
 }

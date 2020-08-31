@@ -7,6 +7,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+
+  // Remove extra space below images
+  display: block;
 }
 
 /* Class Visually Hidden */
@@ -22,10 +25,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* Class Hidden */
-
-.hidden {
-  display: none;
 }

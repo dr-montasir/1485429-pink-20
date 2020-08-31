@@ -58,11 +58,18 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </header>
+
         <article class="gallery__post post post--panorama">
-          <figure class="post__photo post__photo--panorama">
-            <a class="post__link post__link--panorama" href="">
-              <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
-              <span class="post__panorama post__panorama--today">ПАНОРАМА ДНЯ</span>
+          <figure class="post__photo">
+            <a class="post__link" href="">
+              <div class="post__panorama-sticker">
+                <span class="post__sticker-name">ПАНОРАМА ДНЯ</span>
+              </div>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
             </a>
           </figure>
           <div class="post__body">
@@ -70,176 +77,204 @@
               <span class="post__author">Анна</span>
               <span class="post__time">(5 минут назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-            </div>
+            <p class="post__description">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
             <div class="post__like">
-              <button class="like" type="button">
+              <button class="like like--panorama" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 215</span>
               </button>
             </div>
           </div>
         </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+        <div class="gallery__users">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="car">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Левон</span>
               <span class="post__time">(5 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-            </div>
+            <p class="post__description">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 356</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="drumset">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Антон</span>
               <span class="post__time">(12 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Соседи будут рады!
-              </p>
-            </div>
+            <p class="post__description">
+              Соседи будут рады!
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 666</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="window">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Борис</span>
               <span class="post__time">(20 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-            </div>
+            <p class="post__description">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 215</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="fair">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Сергей</span>
               <span class="post__time">(25 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Самая кубанская в мире!
-              </p>
-            </div>
+            <p class="post__description">
+              Самая кубанская в мире!
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 4</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="pov">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Максим</span>
               <span class="post__time">(40 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Где снег-то?
-              </p>
-            </div>
+            <p class="post__description">
+              Где снег-то?
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 150</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="gallery__post post">
-          <figure class="post__photo">
-            <a class="post__link" href="">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="">
-            </a>
-          </figure>
-          <div class="post__body">
+          <article class="gallery__post post">
+            <figure class="post__photo">
+              <a class="post__link" href="">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="wing">
+                </picture>
+              </a>
+            </figure>
             <header class="post__header">
               <span class="post__author">Надежда</span>
               <span class="post__time">(45 часов назад)</span>
             </header>
-            <div class="post__description">
-              <p class="post__text">
-                Всем GM и взаимные лайки!
-              </p>
-            </div>
+            <p class="post__description">
+              Всем GM и взаимные лайки!
+            </p>
             <div class="post__like">
               <button class="like" type="button">
                 <span class="visually-hidden">Лайк</span>
-                <img src="https://via.placeholder.com/13x12" width="13" height="12" alt="Heart">
+                <svg class="like__heart" width="13px" height="12px" viewBox="521.939 473.064 12.545 11.99">
+                  <g>
+                    <path d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </g>
+                </svg>
                 <span class="like__count">Нравится: 2560</span>
               </button>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
 
       <section class="photo-upload">
@@ -253,10 +288,10 @@
           <div class="photo-upload__form editor-form">
             <form class="editor-form__form" action="https://echo.htmlacademy.ru" method="get">
               <figure class="photo-upload__photo photo-upload__photo--source">
-                <picture class="image-source">
-                  <source media="(min-width: 900px)" srcset="https://via.placeholder.com/900x1202?text=picture+source+:+desktop">
-                  <source media="(min-width: 600px)" srcset="https://via.placeholder.com/600x801?text=picture+source+:+tablet">
-                  <img class="image-source__device" src="https://via.placeholder.com/280x374?text=picture+source+:+mobile" srcset="https://via.placeholder.com/280x374?text=picture+source+:+mobile" width="280" height="374" alt="Обработанная фотография">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Обработанная фотография">
                 </picture>
               </figure>
               <div class="editor-form__tools tools">
