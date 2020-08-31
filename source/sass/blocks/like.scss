@@ -5,6 +5,7 @@
   padding: 0;
 
   background-color: $whitesmoke;
+  color: $cerise;
 
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +30,6 @@
 }
 
 .like__heart {
-  fill: $cerise;
   order: 1;
 
   cursor: pointer;
@@ -43,7 +43,6 @@
   order: 2;
 
   text-transform: uppercase;
-  color: $cerise;
 
   cursor: pointer;
 
