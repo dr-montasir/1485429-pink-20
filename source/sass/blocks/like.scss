@@ -5,6 +5,8 @@
   border: none;
   padding: 0;
 
+  background-color: $whitesmoke;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -28,6 +30,8 @@
   fill: $cerise;
   order: 1;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     order: 2;
   }
@@ -38,6 +42,8 @@
 
   text-transform: uppercase;
   color: $cerise;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     order: 1;
