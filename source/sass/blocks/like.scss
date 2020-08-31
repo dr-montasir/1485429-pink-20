@@ -1,1 +1,45 @@
 // Like
+
+.like {
+  width: 100%;
+  border: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 16px;
+    justify-content: space-between;
+  }
+}
+
+.like--panorama {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.like__heart {
+  fill: $cerise;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.like__count {
+  order: 2;
+
+  text-transform: uppercase;
+  color: $cerise;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
