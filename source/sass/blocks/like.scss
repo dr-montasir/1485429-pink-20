@@ -1,7 +1,6 @@
 // Like
 
 .like {
-  width: 100%;
   border: none;
   padding: 0;
 
@@ -13,8 +12,11 @@
   align-items: center;
 
   gap: 18px;
+  justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+
     gap: 16px;
     justify-content: space-between;
   }
