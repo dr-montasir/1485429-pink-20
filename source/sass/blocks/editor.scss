@@ -1,0 +1,16 @@
+// Editor Form
+
+.editor {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $whitesmoke;
+}
+
+.editor__form {
+  display: grid;
+  grid-template-rows: min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -278,17 +278,18 @@
             Затмите их всех! Выкладывайте все, что накопилось в телефоне!
           </p>
         </header>
-        <div class="photo-upload__wrapper">
-          <div class="photo-upload__form editor-form">
-            <form class="editor-form__form" action="https://echo.htmlacademy.ru" method="get">
-              <figure class="photo-upload__photo photo-upload__photo--source">
-                <picture>
-                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                  <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Обработанная фотография">
-                </picture>
-              </figure>
-              <div class="editor-form__tools tools">
+
+        <div class="editor">
+          <form class="editor__form" action="https://echo.htmlacademy.ru" method="get">
+            <figure class="editor__photo editor__photo--source">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Обработанная фотография">
+              </picture>
+            </figure>
+            <div class="editor__tools tools">
+              <div class="tools__control">
                 <div class="tools__crop">
                   <button class="tools__btn tools__btn--crop" type="button">
                     <span class="visually-hidden">Обрезка</span>
@@ -307,21 +308,24 @@
                     <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="contrast-svg button">
                   </button>
                 </div>
-                <div class="tools__range-controls range-controls">
+                <div class="tools__range">
                   <span class="visually-hidden">Ползунок</span>
-                  <div class="range-controls__scale range-controls__scale--mod-val">
-                    <div class="range-controls__slider range-controls__slider--mod-state"></div>
+                  <div class="tools__range-scale tools__range-scale--mod-val">
+                    <div class="tools__slider tools__slider--mod-state"></div>
                   </div>
                 </div>
               </div>
-              <div class="photo-upload__submit">
-                <button class="editor-form__btn editor-form__btn--submit" type="submit">Запостить</button>
+
+              <div class="tools__button">
+                <div class="tools__submit">
+                  <button class="tools__btn tools__btn--submit" type="submit">Запостить</button>
+                </div>
+                <div class="tools__reset">
+                  <button class="tools__btn tools__btn--reset" type="reset">Отмена</button>
+                </div>
               </div>
-              <div class="photo-upload__reset">
-                <button class="editor-form__btn editor-form__btn--reset" type="reset">Отмена</button>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
