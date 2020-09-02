@@ -131,14 +131,6 @@
   }
 }
 
-.tools__range-main {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .tools__range {
   position: relative;
   height: 22px;
@@ -154,6 +146,14 @@
   @media (min-width: $desktop-width) {
     padding-top: 20px;
     width: 362px;
+  }
+}
+
+.tools__range-main {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -188,37 +188,37 @@
 }
 
 .tools__range--crop .tools__toggle {
-  left: 240px * (206 / 240) - 14;
+  left: 192px;
 
   @media (min-width: $tablet-width) {
-    left: 202px * (160 / 202) - 14;
+    left: 146px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 288px * (78 / 288) - 14;
+    left: 64px;
   }
 }
 
 .tools__range--fill .tools__toggle {
-  left: 240px * (46 / 240) - 14;
+  left: 32px;
 
   @media (min-width: $tablet-width) {
-    left: 202px * (39 / 202) - 14;
+    left: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 288px * (261 / 288) - 14;
+    left: 247px;
   }
 }
 
 .tools__range--contrast .tools__toggle {
-  left: 240px * (131 / 240) - 14;
+  left: 117px;
 
   @media (min-width: $tablet-width) {
-    left: 202px * (110 / 202) - 14;
+    left: 96px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 288px * (174 / 288) - 14;
+    left: 160px;
   }
 }
