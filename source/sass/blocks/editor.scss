@@ -49,18 +49,14 @@
   outline: 5px solid rgba(red, 0.35);
   outline-offset: -5px;
 
-  margin: 0 auto;
-  padding: 20px;
-  width: 280px;
-
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding-top: 29px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 410px;
-    padding: 20px 60px 20px 0;
+    padding: 0 60px 20px 0;
   }
 }

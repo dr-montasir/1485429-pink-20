@@ -1,4 +1,4 @@
-// Like
+/* Like */
 
 .like {
   border: none;
@@ -27,10 +27,6 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
-}
-
-.like__icon-source {
-  display: none;
 }
 
 .like__heart {

@@ -4,7 +4,16 @@
   outline: 5px solid rgba(red, 0.35);
   outline-offset: -5px;
 
-  color: $bunting;
+  color: $cerise;
+}
+
+.tools__control {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
 }
 
 .tools__control-icons {
@@ -17,20 +26,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    flex-direction: column;
+    display: none;
   }
-}
-
-.tools__item {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.tools__icons {
-  display: none;
 }
 
 .tools__btn-icon {
@@ -53,19 +50,6 @@
   &:active {
     color: $cerise;
   }
-
-  @media (min-width: $tablet-width) {
-    color: $cerise;
-    pointer-events: none;
-
-    width: 24px;
-    height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 48px;
-    height: 48px;
-  }
 }
 
 .tools__btn-icon--active {
@@ -76,10 +60,7 @@
   cursor: pointer;
 }
 
-.tools__item--crop .tools__icon {
-  width: 44px;
-  height: 44px;
-
+.tools__range--crop .tools__icon {
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 22px;
@@ -91,10 +72,7 @@
   }
 }
 
-.tools__item--fill .tools__icon {
-  width: 44px;
-  height: 44px;
-
+.tools__range--fill .tools__icon {
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 22px;
@@ -106,10 +84,7 @@
   }
 }
 
-.tools__item--contrast .tools__icon {
-  width: 32px;
-  height: 33px;
-
+.tools__range--contrast .tools__icon {
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
@@ -121,9 +96,7 @@
   }
 }
 
-.tools__item--crop .tools__range,
-.tools__item--contrast .tools__range,
-.tools__item--fill .tools__range {
+.tools__control-ranges .tools__icon {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -149,11 +122,22 @@
   }
 }
 
-.tools__range-main {
-  display: block;
+.tools__range-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    display: block;
+    box-shadow: 0 1px 0 0 $bunting--010;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      box-shadow: none;
+    }
   }
 }
 
@@ -220,5 +204,15 @@
 
   @media (min-width: $desktop-width) {
     left: 160px;
+  }
+}
+
+.tools__buttons {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+
+    box-shadow: inset 0 1px 0 0 $bunting--010;
   }
 }
