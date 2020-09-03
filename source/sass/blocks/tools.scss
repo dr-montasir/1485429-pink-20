@@ -255,9 +255,31 @@
 
 .tools__btn[type="submit"] {
   color: $cerise;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $cerise;
+  }
+
+  &:active {
+    color: $white--030;
+  }
 }
 
 .tools__btn[type="reset"] {
   color: $bunting--010;
   border-color: $bunting--010;
+
+  &:hover,
+  &:focus {
+    color: $bunting--030;
+    border-color: $bunting--030;
+  }
+
+  &:active {
+    color: $white--030;
+    background-color: $bunting--030;
+    border-color: $bunting--030;
+  }
 }
