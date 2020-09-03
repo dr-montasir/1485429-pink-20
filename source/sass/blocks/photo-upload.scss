@@ -1,8 +1,12 @@
 /* Photo Upload */
 
 .photo-upload {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px;
+    width: 940px;
+  }
 }
 
 .photo-upload__intro {

@@ -1,0 +1,62 @@
+/* Editor Form */
+
+.editor {
+  margin: 0 auto;
+  background-color: $whitesmoke;
+
+  @media (min-width: $tablet-width) {
+    max-width: 700px;
+    padding-top: 37px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-top: 35px;
+    padding-bottom: 37px;
+  }
+}
+
+.editor__form {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.editor__photo {
+  margin: 0 auto;
+  padding: 20px;
+  width: 280px;
+
+  outline: 5px solid rgba(red, 0.35);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 22px 0 20px 80px;
+  }
+}
+
+.editor__tools {
+  outline: 5px solid rgba(red, 0.35);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 410px;
+    padding: 0 60px 20px 0;
+  }
+}
