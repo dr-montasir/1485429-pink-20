@@ -4,3 +4,44 @@
   display: grid;
   grid-template-rows: min-content min-content min-content;
 }
+
+.form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    gap: 74px;
+  }
+}
+
+.form__info .form__label,
+.form__contact .form__label,
+.form__legend {
+  color: $cerise;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form__info {
+  order: 1;
+}
+
+.form__achievement {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.form__contact {
+  order: 3;
+}
+
+.form__apps {
+  order: 4;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
