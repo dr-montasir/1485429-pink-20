@@ -1,9 +1,6 @@
 /* Tools */
 
 .tools {
-  outline: 5px solid rgba(red, 0.35);
-  outline-offset: -5px;
-
   color: $cerise;
 }
 
@@ -13,6 +10,10 @@
 
   @media (max-width: $mobile-width-only) {
     width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
@@ -131,8 +132,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 34px;
     width: 362px;
+
+    grid-template-columns: 48px min-content;
+    gap: 2px;
   }
 }
 
@@ -248,6 +253,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 44px;
+    padding: 125px 0 0 0;
   }
 }
 
