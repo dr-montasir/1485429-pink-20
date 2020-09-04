@@ -1,0 +1,33 @@
+/* btn */
+
+.btn {
+  padding: 11px 26px;
+  height: 59px;
+  box-sizing: border-box;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: white;
+
+  border: 2px solid $jungle-green;
+  border-radius: 1px;
+  background-color: $jungle-green;
+
+  &:hover,
+  &:focus {
+    background-color: $elf-green;
+    border: 2px solid $elf-green;
+  }
+
+  &:active {
+    color: $white--030;
+    background-color: $elf-green;
+    border: 2px solid $elf-green;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $gainsboro-2;
+    border: 2px solid $gainsboro-2;
+  }
+}

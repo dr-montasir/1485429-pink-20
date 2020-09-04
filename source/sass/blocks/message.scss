@@ -1,0 +1,30 @@
+/* Message */
+
+.message {
+  margin: 0 auto;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
+
+.message__title {
+  line-height: 40px;
+}
+
+.message__text {
+  margin: 0 auto;
+  max-width: 310px;
+}
+
+.message--error .message__button {
+  background-color: $white;
+}
+
+.message--success .message__button {
+  background-color: $whitesmoke;
+}
