@@ -41,3 +41,18 @@
     }
   }
 }
+
+.participant__form {
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 48px 20px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px 48px 10px;
+    width: 940px;
+  }
+}
