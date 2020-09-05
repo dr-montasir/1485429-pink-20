@@ -1,10 +1,11 @@
 /* btn */
 
 .btn {
-  padding: 11px 26px;
-  height: 59px;
+  padding: 5px 20px;
+  min-height: 47px;
   box-sizing: border-box;
   font-weight: 700;
+  font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: white;
@@ -29,5 +30,12 @@
     color: $white;
     background-color: $gainsboro-2;
     border: 2px solid $gainsboro-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 26px;
+    min-height: 59px;
+
+    font-size: 18px;
   }
 }
