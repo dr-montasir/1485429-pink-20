@@ -45,3 +45,45 @@
     order: 2;
   }
 }
+
+.form__submit {
+  padding: 52px 0 18px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0 50px 0;
+
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 2px 0;
+  }
+}
+
+.form__btn {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.form__note,
+.form__note-text {
+  margin: 0;
+}
+
+.form__note-text {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__note-symbol {
+  color: $cerise;
+}
