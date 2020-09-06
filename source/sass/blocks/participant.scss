@@ -8,18 +8,19 @@
 }
 
 .participant__header {
-  outline: 5px solid rgba(blue, 0.35);
-  outline-offset: -5px;
-
-  margin: 0;
-  padding: 44px 20px 42px 20px;
+  margin: 0 auto;
+  padding: 44px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 20px 75px 20px;
+    padding: 90px 20px 74px 20px;
+
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 90px 10px 74px 10px;
+    padding: 90px 10px 66px 10px;
+
+    width: 940px;
   }
 }
 

@@ -75,23 +75,26 @@
             </div>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="form__inputs">
-              <fieldset class="form__info">
+            <div class="form__info">
+              <fieldset class="form__fieldset">
                 <legend class="visually-hidden">ФИО</legend>
-                <div class="form__info-wrapper">
-                  <label class="form__label" for="surname-field">Фамилия:</label>
+                <div class="form__name form__name--surname">
+                  <label class="form__label" for="surname-field">Фамилия:
+                  </label>
                   <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname-field" required>
                 </div>
-                <div class="form__info-wrapper">
+                <div class="form__name form__name--name">
                   <label class="form__label" for="name-field">Имя:</label>
-                  <input class="form_input" type="text" name="name" placeholder="Введите ваше имя *" id="name-field" required>
+                  <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" id="name-field" required>
                 </div>
-                <div class="form__info-wrapper">
+                <div class="form__name form__name--middle">
                   <label class="form__label" for="middle-field">Отчество:</label>
                   <input class="form__input" type="text" name="middle-name" placeholder="Ну и отчество тоже" id="middle-field">
                 </div>
               </fieldset>
-              <fieldset class="form__achievement">
+            </div>
+            <div class="form__achievement">
+              <fieldset class="form__fieldset">
                 <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
                 <div class="form__achievement-wrapper">
                   <input class="form__input" type="checkbox" name="selfie" id="selfie-field" checked>
@@ -118,8 +121,10 @@
                   <label class="form__label" for="hotel-field">Разгромил отель</label>
                 </div>
               </fieldset>
-              <fieldset class="form__contact">
-                <legend class="visually-hidden">Контактная информация</legend>
+            </div>
+            <div class="form__contact">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Контактная информация</legend>
                 <div class="form__phone">
                   <label class="form__label" for="phone-field">Номер телефона</label>
                   <input class="form__input" type="tel" name="phone" placeholder="Номер, пожалуйста" id="phone-field">
@@ -129,7 +134,9 @@
                   <input class="form__input" type="email" name="email" placeholder="Введите почту *" id="email-field" required>
                 </div>
               </fieldset>
-              <fieldset class="form__apps">
+            </div>
+            <div class="form__apps">
+              <fieldset class="form__fieldset">
                 <legend class="form__legend">С каким приложением путешествовали?</legend>
                 <div class="form__ios">
                   <input class="form__input" type="radio" name="device" id="ios-field" checked>
@@ -145,12 +152,14 @@
                 </div>
               </fieldset>
             </div>
-            <fieldset class="form__emotion">
-              <legend class="form__legend">Опишите свои эмоции</legend>
-              <div class="form__textarea-wrapper">
-                <textarea class="form__textarea" rows="5" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotion-field"></textarea>
-              </div>
-            </fieldset>
+            <div class="form__emotion">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Опишите свои эмоции</legend>
+                <div class="form__textarea-wrapper">
+                  <textarea class="form__textarea" rows="5" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotion-field"></textarea>
+                </div>
+              </fieldset>
+            </div>
             <div class="form__submit">
               <div class="form__button">
                 <button class="form__btn btn" type="submit">Отправить форму</button>

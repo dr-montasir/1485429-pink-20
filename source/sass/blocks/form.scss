@@ -1,68 +1,238 @@
 /* Form */
 
 .form {
-  display: grid;
-  grid-template-rows: min-content min-content min-content;
-}
+  margin: 0 auto;
+  width: 320px;
 
-.form__inputs {
-  display: flex;
-  flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 620px;
+  }
 
   @media (min-width: $desktop-width) {
-    gap: 74px;
+    margin: 0;
+    width: 940px;
+  }
+}
+
+.form__info {
+  margin: 0;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+
+    margin: 0 auto;
+    padding: 0;
+
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    width: 470px;
+  }
+}
+
+.form__apps {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  background-color: $whitesmoke;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    padding: 0;
+
+    width: 620px;
+
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    width: 470px;
+  }
+}
+
+.form__contact {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+
+    padding: 0;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 940px;
+  }
+}
+
+.form__contact .form__legend {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form__achievement {
+  background-color: $whitesmoke;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+
+    padding: 0;
+    width: 620px;
+
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    width: 940px;
+  }
+}
+
+.form__emotion {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+
+    padding: 0;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    width: 940px;
+  }
+}
+
+.form__fieldset {
+  @media (max-width: $mobile-width-only) {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.form__info .form__fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.form__info .form__input {
+  margin: 10px 0 22px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 0 46px 0;
+  }
+}
+
+.form__input[type="text"],
+.form__input[type="email"],
+.form__input[type="tel"],
+.form__textarea {
+  padding: 10px 22px;
+
+  box-sizing: border-box;
+
+  border: 2px solid $gainsboro-2;
+  border-radius: 1px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  width: 276px;
+  height: 59px;
+
+  color: $bunting;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 197px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 189px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 124px;
   }
 }
 
 .form__info .form__label,
-.form__contact .form__label,
+.form__contact .form__label {
+  margin-right: 20px;
+
+  display: block;
+
+  text-transform: uppercase;
+  font-size: 14px;
+
+  color: $cerise;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 .form__legend {
+  margin: 0 auto;
+  text-align: center;
   color: $cerise;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.form__info {
-  order: 1;
-}
-
-.form__achievement {
-  order: 2;
-
-  @media (min-width: $tablet-width) {
-    order: 4;
-  }
-}
-
-.form__contact {
-  order: 3;
-}
-
-.form__apps {
-  order: 4;
-
-  @media (min-width: $tablet-width) {
-    order: 2;
-  }
-}
-
 .form__submit {
-  padding: 52px 0 18px 0;
+  margin: 0 auto;
+  padding: 52px 20px 18px 20px;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 0 50px 0;
+    order: 6;
 
+    padding: 70px 0 50px 0;
+    width: 620px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     padding: 69px 0 2px 0;
+
+    width: 940px;
   }
 }
 
