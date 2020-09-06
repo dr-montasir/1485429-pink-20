@@ -171,6 +171,104 @@
   height: 59px;
 
   color: $bunting;
+
+  // to remove the default outline color in chrome
+  outline: none;
+
+  &:hover {
+    border: 2px solid $bunting;
+  }
+
+  &:focus {
+    border: 2px solid $cerise;
+  }
+}
+
+.form__input[type="checkbox"],
+.form__input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__input[type="checkbox"] + .form__label,
+.form__input[type="radio"] + .form__label {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  user-select: none;
+
+  cursor: pointer;
+
+  gap: 14px;
+}
+
+.form__input[type="checkbox"] + .form__label::before,
+.form__input[type="radio"] + .form__label::before {
+  content: "";
+  display: block;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/checkbox-radio-group.svg");
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  opacity: 1;
+}
+
+.form__input[type="radio"]:not(:checked) + .form__label::before {
+  background-position-y: 0;
+}
+
+.form__input[type="radio"]:not(:checked):hover + .form__label::before,
+.form__input[type="radio"]:not(:checked):focus + .form__label::before {
+  background-position-y: -47px;
+}
+
+.form__input[type="radio"]:not(:checked):active + .form__label::before {
+  background-position-y: -94px;
+}
+
+.form__input[type="radio"]:checked + .form__label::before {
+  background-position-y: -141px;
+}
+
+.form__input[type="radio"]:checked:hover + .form__label::before,
+.form__input[type="radio"]:checked:focus + .form__label::before {
+  background-position-y: -188px;
+}
+
+.form__input[type="radio"]:checked:active + .form__label::before {
+  background-position-y: -235px;
+}
+
+.form__input[type="checkbox"]:not(:checked) + .form__label::before {
+  background-position-y: -282px;
+}
+
+.form__input[type="checkbox"]:not(:checked):hover + .form__label::before,
+.form__input[type="checkbox"]:not(:checked):focus + .form__label::before {
+  background-position-y: -329px;
+}
+
+.form__input[type="checkbox"]:not(:checked):active + .form__label::before {
+  background-position-y: -376px;
+}
+
+.form__input[type="checkbox"]:checked + .form__label::before {
+  background-position-y: -423px;
+}
+
+.form__input[type="checkbox"]:checked:hover + .form__label::before,
+.form__input[type="checkbox"]:checked:focus + .form__label::before {
+  background-position-y: -470px;
+}
+
+.form__input[type="checkbox"]:checked:active + .form__label::before {
+  background-position-y: -517px;
 }
 
 .form__textarea {
