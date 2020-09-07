@@ -19,7 +19,7 @@
 
 .form__info {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 21px 20px;
 
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@
 
 .form__apps {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 39px 20px 42px 20px;
 
   background-color: $whitesmoke;
 
@@ -68,7 +68,7 @@
 
 .form__contact {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 36px 20px 44px 20px;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -83,6 +83,10 @@
   }
 }
 
+.form__contact .form__input {
+  margin: 9px 0 19px 0;
+}
+
 .form__contact .form__legend {
   display: none;
 
@@ -95,7 +99,7 @@
   background-color: $whitesmoke;
 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 38px 20px 37px 20px;
 
   @media (min-width: $tablet-width) {
     order: 4;
@@ -115,7 +119,7 @@
 
 .form__emotion {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 39px 20px 0 20px;
 
   text-align: center;
 
@@ -131,6 +135,10 @@
 
     width: 940px;
   }
+}
+
+.form__emotion .form__legend {
+  padding-bottom: 19px;
 }
 
 .form__fieldset {
@@ -157,7 +165,7 @@
 .form__input[type="email"],
 .form__input[type="tel"],
 .form__textarea {
-  padding: 10px 22px;
+  padding: 10px 20px;
 
   box-sizing: border-box;
 
@@ -175,6 +183,11 @@
   // to remove the default outline color in chrome
   outline: none;
 
+  &::placeholder {
+    color: $bunting;
+    font-family: "Open Sans", sans-serif;
+  }
+
   &:hover {
     border: 2px solid $bunting;
   }
@@ -182,6 +195,29 @@
   &:focus {
     border: 2px solid $cerise;
   }
+}
+
+.form__checkbox,
+.form__radio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__checkbox .form__label {
+  padding: 33px 0 0 0;
+}
+
+.form__radio .form__label {
+  padding: 26px 0 0 0;
+}
+
+.form__apps .form__legend {
+  padding-bottom: 7px;
+}
+
+.form__label {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form__input[type="checkbox"],
@@ -307,6 +343,12 @@
   color: $cerise;
   text-transform: uppercase;
   font-size: 14px;
+
+  line-height: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 228px;
+  }
 }
 
 .form__submit {
