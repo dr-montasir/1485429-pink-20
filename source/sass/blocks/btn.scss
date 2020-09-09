@@ -1,0 +1,41 @@
+/* btn */
+
+.btn {
+  padding: 5px 20px;
+  min-height: 47px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: white;
+
+  border: 2px solid $jungle-green;
+  border-radius: 1px;
+  background-color: $jungle-green;
+
+  &:hover,
+  &:focus {
+    background-color: $elf-green;
+    border: 2px solid $elf-green;
+  }
+
+  &:active {
+    color: $white--030;
+    background-color: $elf-green;
+    border: 2px solid $elf-green;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $gainsboro-2;
+    border: 2px solid $gainsboro-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 26px;
+    min-height: 59px;
+
+    font-size: 18px;
+  }
+}
