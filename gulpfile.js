@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -53,3 +54,18 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Image minification (imagemin)
+
+const images = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({ quality: 85, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo()
+    ])
+  );
+};
+
+exports.images = images;
