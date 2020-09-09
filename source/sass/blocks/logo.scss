@@ -1,0 +1,131 @@
+/* logo - svg position */
+
+.logo {
+  width: 147px;
+  height: 40px;
+
+  &--top {
+    margin: 5px 0 0 -71px;
+
+    fill: $white;
+
+    &:hover {
+      fill: $cerise;
+    }
+
+    &:active {
+      fill: $white--030;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 27px 0 42px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 27px 173px 43px 0;
+    }
+  }
+
+  &--bottom {
+    fill: $bunting;
+
+    &:hover {
+      fill: $cerise;
+    }
+
+    &:active {
+      fill: $white--030;
+    }
+  }
+}
+
+/* logo svg viewport */
+
+.logo__glasses-tablet {
+  display: none;
+
+  &--footer {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__i-star,
+.logo__stars {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+/* logo top svg fill */
+
+.logo--top .logo__i-star,
+.logo--top .logo__stars {
+  fill: $cerise;
+}
+
+.logo--top:active .logo__i-star,
+.logo--top:active .logo__stars {
+  fill: $cerise--030;
+}
+
+/* logo bottom svg fill */
+
+.logo--bottom .logo__text {
+  fill: $bunting;
+}
+
+.logo--bottom:hover .logo__text {
+  fill: $cerise;
+}
+
+.logo--bottom:active .logo__text {
+  fill: $bunting--030;
+}
+
+.logo--bottom .logo__i-star {
+  fill: $cerise;
+}
+
+.logo--bottom:active .logo__i-star {
+  fill: $cerise--030;
+}
+
+.logo--bottom .logo__glasses-tablet,
+.logo--bottom .logo__glasses-desktop {
+  fill: $cerise;
+}
+
+.logo--bottom:active .logo__glasses-tablet,
+.logo--bottom:active .logo__glasses-desktop {
+  fill: $cerise--030;
+}
+
+.logo--bottom:hover .logo__stars {
+  fill: $cerise;
+}
+
+.logo--bottom:active .logo__stars {
+  fill: $bunting--030;
+}

@@ -3,6 +3,9 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 
+// Site logo
+@import "blocks/logo.scss";
+
 // Blocks: Head & Main Navigation
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
