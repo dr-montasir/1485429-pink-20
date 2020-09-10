@@ -8,7 +8,6 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
-const pipeline = require("readable-stream").pipeline;
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -136,13 +135,14 @@ const clean = () => {
 
 exports.clean = clean;
 
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "compress",
-  "sprite",
-  "html"
+// Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
+  compress,
+  sprite
 );
 
 exports.build = build;
