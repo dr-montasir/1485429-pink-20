@@ -7,6 +7,8 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -36,7 +38,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -72,6 +74,18 @@ const images = () => {
 };
 
 exports.images = images;
+
+// js compress
+
+const compress = () => {
+  return gulp
+    .src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+};
+
+exports.compress = compress;
 
 // WebP format
 
@@ -126,6 +140,7 @@ const build = () => gulp.series(
   "clean",
   "copy",
   "css",
+  "compress",
   "sprite",
   "html"
 );
