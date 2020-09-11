@@ -46,6 +46,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 57px;
+
+    margin-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,11 +64,11 @@
   vertical-align: middle;
 
   margin: 0 20px;
-  padding: 12px 20px 12px 19px;
+  padding: 6px 20px 6px 19px;
 
   font-weight: 700;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 24px;
 
   background-color: $cerise;
   color: $white;
