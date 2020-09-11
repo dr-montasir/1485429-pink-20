@@ -103,7 +103,7 @@
 
 .application__header {
   margin: 0 auto;
-  padding: 25px 20px 0 20px;
+  padding: 22px 20px 5px 20px;
   width: 280px;
 
   text-align: center;
@@ -202,7 +202,7 @@
 
 .application__download-wrapper {
   margin: 0 auto;
-  padding: 28px 20px 38px 20px;
+  padding: 28px 20px 30px 20px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -226,7 +226,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  padding: 18px 19px 18px 18px;
+  padding: 16px 19px 16px 18px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -258,14 +258,14 @@
 
 .application__list {
   margin: 0;
-  padding: 32px 0 28px 0;
+  padding: 32px 0 20px 0;
   height: 100%;
   list-style: none;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: end;
+  align-items: baseline;
   justify-content: center;
   gap: 35px;
 
