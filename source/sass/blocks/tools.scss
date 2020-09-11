@@ -198,6 +198,10 @@
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background-color: $cerise;
+  }
 }
 
 .tools__range--crop .tools__toggle {
@@ -300,6 +304,7 @@
 
   &:active {
     color: $white--030;
+    background-color: $cerise;
   }
 }
 
@@ -316,6 +321,6 @@
   &:active {
     color: $white--030;
     background-color: $bunting--030;
-    border-color: $bunting--030;
+    border: none;
   }
 }

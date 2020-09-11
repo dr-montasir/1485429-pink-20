@@ -154,15 +154,6 @@
   font-size: 18px;
   line-height: 32px;
 
-  @media (min-width: $desktop-width) {
-    padding: 19px 0;
-
-    font-weight: 400;
-    line-height: 18px;
-
-    color: $white;
-  }
-
   &:hover {
     color: $cerise;
   }
@@ -173,6 +164,19 @@
 
   &:active {
     color: $cerise--030;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0;
+
+    font-weight: 400;
+    line-height: 18px;
+
+    color: $white;
+
+    &:active {
+      color: $white--030;
+    }
   }
 }
 
