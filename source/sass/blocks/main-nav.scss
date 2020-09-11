@@ -6,6 +6,12 @@
   display: grid;
   grid-template-rows: min-content 1fr;
 
+  background-color: $bunting;
+
+  &--closed {
+    background-color: transparent;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 10px;
     padding-right: 10px;
@@ -13,6 +19,8 @@
     width: 940px;
 
     grid-template-columns: min-content 1fr;
+
+    background-color: transparent;
   }
 }
 
