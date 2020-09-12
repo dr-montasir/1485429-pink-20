@@ -58,10 +58,6 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // Image minification (imagemin)
 
 const images = () => {
@@ -173,3 +169,9 @@ const start = gulp.series(
 );
 
 exports.start = start;
+
+// Default
+
+exports.default = gulp.series(
+  build, server, watcher
+);
