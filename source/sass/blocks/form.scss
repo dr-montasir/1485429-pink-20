@@ -23,7 +23,7 @@
 
 .form__info {
   margin: 0;
-  padding: 0 20px 21px 20px;
+  padding: 0 20px 42px 20px;
 
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@
 
 .form__apps {
   margin: 0 auto;
-  padding: 39px 20px 42px 20px;
+  padding: 39px 20px 35px 15px;
 
   background-color: $whitesmoke;
 
@@ -75,7 +75,7 @@
 
 .form__contact {
   margin: 0 auto;
-  padding: 36px 20px 44px 20px;
+  padding: 33px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -122,7 +122,7 @@
 }
 
 .form__contact .form__input {
-  margin: 9px 0 19px 0;
+  margin: 5px 0 17px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -143,7 +143,7 @@
   background-color: $whitesmoke;
 
   margin: 0 auto;
-  padding: 38px 20px 37px 20px;
+  padding: 40px 20px 37px 12px;
 
   @media (min-width: $tablet-width) {
     order: 4;
@@ -163,7 +163,7 @@
 
 .form__emotion {
   margin: 0 auto;
-  padding: 39px 20px 0 20px;
+  padding: 35px 20px 0 20px;
 
   text-align: center;
 
@@ -230,7 +230,7 @@
   line-height: 30px;
 
   width: 276px;
-  height: 59px;
+  height: 63px;
 
   color: $bunting;
 
@@ -282,8 +282,6 @@
 }
 
 .form__name {
-  padding: 0 0 22px 0;
-
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0 0 54px 0;
@@ -300,6 +298,24 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 58px 0;
+  }
+}
+
+.form__name--surname .form__label {
+  @media (max-width: $mobile-width-only) {
+    padding: 0 0 7px 23px;
+  }
+}
+
+.form__name--name .form__label {
+  @media (max-width: $mobile-width-only) {
+    padding: 16px 0 4px 23px;
+  }
+}
+
+.form__name--middle .form__label {
+  @media (max-width: $mobile-width-only) {
+    padding: 19px 0 4px 23px;
   }
 }
 
@@ -433,7 +449,7 @@
   content: "";
   display: block;
 
-  padding: 0 14px 0 0;
+  padding: 0 23px 0 0;
 
   width: 49px;
   height: 49px;
@@ -497,11 +513,18 @@
   background-position-y: -517px;
 }
 
+.form__input[type="checkbox"] + .form__label::before {
+  padding: 0 17px 0 0;
+}
+
 .form__textarea {
   width: 100%;
-  min-height: 197px;
+  min-height: 200px;
+
+  padding: 14px 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     min-height: 189px;
   }
 
@@ -512,8 +535,6 @@
 
 .form__info .form__label,
 .form__contact .form__label {
-  margin: 0 20px 10px 0;
-
   display: block;
 
   text-transform: uppercase;
@@ -530,6 +551,8 @@
 }
 
 .form__contact .form__label {
+  padding: 0 0 0 23px;
+
   @media (min-width: $tablet-width) {
     padding: 10px 0 29px 19px;
   }
@@ -586,13 +609,13 @@
 
 .form__submit {
   margin: 0 auto;
-  padding: 48px 20px 18px 20px;
+  padding: 42px 20px 18px 20px;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 34px;
 
   @media (min-width: $tablet-width) {
     order: 6;
