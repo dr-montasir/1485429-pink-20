@@ -32,10 +32,11 @@
 
 .editor__photo {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 18px 20px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    padding: 20px;
     width: 300px;
   }
 

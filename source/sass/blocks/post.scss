@@ -35,6 +35,15 @@
 
 .post--panorama img {
   width: 100%;
+  min-height: 137px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 509px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 506px;
+  }
 }
 
 .post__panorama-sticker {
@@ -45,7 +54,7 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    margin-top: 41px;
+    margin-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +82,23 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 10px;
+  }
+}
+
+.post--no-panorama .post__photo {
+  width: 100%;
+}
+
+.post--no-panorama img {
+  width: 100%;
+  min-height: 180px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
   }
 }
 
@@ -109,7 +135,7 @@
 .post--panorama .post__body {
   background-color: $whitesmoke;
   margin: 0 20px;
-  padding: 16px 0 22px 0;
+  padding: 17px 0 21px 0;
 
   align-items: center;
 
@@ -160,8 +186,7 @@
 }
 
 .post__like {
-  // padding-top: 5px;
-  padding-bottom: 21px;
+  padding-bottom: 21.5px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 29px;

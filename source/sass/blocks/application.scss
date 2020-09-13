@@ -118,9 +118,10 @@
   }
 }
 
-.application__wrapper--center .application__header {
+.application__wrapper--photo-page .application__header {
   margin: 0 auto;
   padding-bottom: 24px;
+  padding-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -133,7 +134,7 @@
   }
 }
 
-.application__wrapper--center .application__intro {
+.application__wrapper--photo-page .application__intro {
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
@@ -144,7 +145,46 @@
   }
 }
 
-.application__wrapper--center .application__intro--mod-text {
+.application__wrapper--photo-page .application__intro--mod-text {
+  padding: 6px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0  68px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.application__wrapper--form-page .application__header {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 747px;
+  }
+}
+
+.application__wrapper--form-page .application__intro {
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.application__wrapper--form-page .application__intro--mod-text {
   padding: 6px 0 20px 0;
 
   @media (min-width: $tablet-width) {
