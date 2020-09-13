@@ -3,7 +3,11 @@
 .social {
   margin: 0;
 
-  gap: 14px;
+  gap: 9px;
+
+  @media (min-width: $tablet-width) {
+    gap: 14px;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 11px;
