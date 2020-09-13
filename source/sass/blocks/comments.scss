@@ -26,11 +26,11 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding: 101px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
+    padding: 114px 0 0 0;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 0;
@@ -61,15 +61,14 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
-    padding-bottom: 3px;
+    padding: 35px 0 0 0;
 
     order: 2;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 2px;
+    padding: 35px 0 2px 0;
 
     font-size: 24px;
   }
@@ -150,7 +149,7 @@
   padding: 36px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 0 0 0;
+    padding: 40px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {

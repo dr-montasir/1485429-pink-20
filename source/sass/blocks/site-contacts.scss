@@ -30,7 +30,7 @@
   color: $bunting;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 39px 0;
+    padding: 45px 0 33px 0;
 
     width: 400px;
     font-size: 40px;
@@ -75,9 +75,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px;
+    padding-bottom: 41px;
 
-    width: 310px;
+    width: 280px;
 
     &:last-child {
       padding-bottom: 0;
@@ -114,6 +114,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+
+  color: $bunting;
 }
 
 .site-contacts__text {
@@ -124,7 +126,7 @@
   padding-top: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 9px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {

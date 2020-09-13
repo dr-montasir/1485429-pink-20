@@ -33,8 +33,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 11px;
-    padding-bottom: 13px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -187,6 +187,7 @@
 
 @media (max-width: $mobile-width-only) {
   .price-table__feature {
+    color: $bunting;
     padding-right: 0;
     grid-template-columns: 3fr 1fr;
 
@@ -196,6 +197,7 @@
 
 @media (min-width: $tablet-width) {
   .price-table__feature {
+    color: $bunting;
     min-width: 113px;
   }
 

@@ -38,7 +38,7 @@
 .effect__title {
   @media (min-width: $tablet-width) {
     margin: 0 142px 0 0;
-    padding-top: 92px;
+    padding: 98px 0 0 20px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -51,17 +51,29 @@
   }
 }
 
-.effect__text {
+.effect__title-br {
+  display: none;
+
   @media (min-width: $tablet-width) {
-    margin: 0 20px 0 0;
-    padding: 12px 0;
-    word-spacing: 4px;
-    font-size: 14px;
-    line-height: 24px;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effect__text {
+  @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 10px 0 10px 20px;
+    word-spacing: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $bunting;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 22px 0 26px 0;
     font-size: 18px;
     line-height: 30px;
@@ -90,12 +102,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 22px;
+    padding: 0 0 22px 20px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 116px;
+    padding: 0 0 116px 0;
   }
 }
