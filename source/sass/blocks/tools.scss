@@ -34,6 +34,12 @@
   }
 }
 
+.tools__item--fill {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 5px;
+  }
+}
+
 .tools__btn-icon {
   border: none;
   margin: 0;
@@ -117,8 +123,8 @@
   position: relative;
   height: 22px;
   width: 280px;
-  padding-top: 20px;
-  margin-bottom: 12px;
+  padding-top: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
@@ -247,16 +253,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
 
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
 
     box-shadow: inset 0 1px 0 0 $bunting--010;
+
+    gap: 14px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 62px 0 0 0;
+
+    gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
