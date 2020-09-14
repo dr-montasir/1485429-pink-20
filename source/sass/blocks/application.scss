@@ -118,6 +118,18 @@
   }
 }
 
+.application__wrapper--photo-page {
+  padding: 6px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 130px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 0 90px 0;
+  }
+}
+
 .application__wrapper--photo-page .application__header {
   margin: 0 auto;
   padding-bottom: 56px;
@@ -141,18 +153,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-  }
-}
-
-.application__wrapper--photo-page .application__intro--mod-text {
-  padding: 6px 0 20px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0  68px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
   }
 }
 

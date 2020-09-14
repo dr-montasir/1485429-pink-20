@@ -41,7 +41,7 @@
     min-height: 509px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     min-height: 506px;
   }
 }
@@ -126,10 +126,6 @@
   font-size: 12px;
 
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    text-transform: none;
-  }
 }
 
 .post--panorama .post__body {
@@ -140,7 +136,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 0 24px 0;
+    padding: 23px 0 26px 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +177,7 @@
   padding-top: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 22px;
   }
 }
 
@@ -189,6 +185,10 @@
   padding-bottom: 21.5px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 29px;
   }
 }
@@ -199,6 +199,8 @@
   padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+
     min-height: 48px;
     padding-bottom: 12px;
   }

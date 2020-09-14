@@ -12,6 +12,10 @@
     width: 280px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 0 1px 0 27px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
@@ -134,7 +138,7 @@
     display: grid;
     grid-template-columns: 24px min-content;
     align-items: center;
-    gap: 14px;
+    gap: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -222,6 +226,17 @@
   }
 }
 
+.tools__range--fill {
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 34px;
+  }
+}
+
 .tools__range--fill .tools__toggle {
   left: 32px;
 
@@ -263,7 +278,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 62px 0 0 0;
+    padding: 56px 0 0 15px;
 
     gap: 24px;
   }
