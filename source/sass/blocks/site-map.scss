@@ -22,6 +22,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: -2px;
       height: 123px;
       background-image: url("../img/bg-map-triangle-white-desktop.svg");
     }

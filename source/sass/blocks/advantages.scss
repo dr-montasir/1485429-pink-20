@@ -14,11 +14,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: -21px;
-    padding: 47px 20px 0 20px;
+    padding: 48px 20px 4px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 51px 10px 72px 10px;
+    padding: 61px 10px 78px 10px;
   }
 }
 
@@ -85,7 +85,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 0;
 
     background-image: url("../img/bg-triangle-white.svg");
@@ -163,37 +163,36 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 301px;
+    padding-top: 302px;
     width: 300px;
-    background-size: 300px 301px;
+    background-size: auto 302px;
     background-repeat: no-repeat;
-    background-position: top center;
 
     &--cheer {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-position: 6px 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-1-desktop@2x.png");
-        background-size: 292px auto;
       }
     }
 
     &--diversify {
       word-spacing: 4px;
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-position: 7px 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
-        background-size: 292px auto;
       }
     }
 
     &--friends {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-position: 10px 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
-        background-size: 292px auto;
       }
     }
   }
@@ -210,11 +209,19 @@
   font-weight: 700;
 
   @media (min-width: $desktop-width) {
-    padding-top: 51px;
+    padding-top: 56px;
     padding-bottom: 25px;
 
     font-size: 30px;
     line-height: 30px;
+  }
+}
+
+.advantages__title-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -229,7 +236,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 0 0 45px 0;
-    width: 260px;
+    padding: 0 0 51px 0;
+    width: 252px;
   }
 }

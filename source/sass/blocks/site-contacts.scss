@@ -23,7 +23,7 @@
 
 .site-contacts__header {
   margin: 0 auto;
-  padding: 41px 0 33px 0;
+  padding: 42px 0 33px 0;
 
   width: 250px;
   line-height: 29px;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 0 49px 0;
+    padding: 60px 0 40px 0;
 
     width: 500px;
     font-size: 50px;
@@ -57,7 +57,9 @@
   justify-content: center;
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -130,7 +132,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding: 20px 0 2px 0;
   }
 }
 

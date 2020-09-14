@@ -35,6 +35,7 @@
     padding-top: 110px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 10px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -114,7 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 10px 0 10px;
+    padding: 22px 10px 0 10px;
   }
 }
 
@@ -215,7 +216,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 77px 0 0 0;
+    margin: 77px auto 0 auto;
     font-size: 50px;
     line-height: 68px;
   }
@@ -249,7 +250,7 @@
 
 .application__download-wrapper {
   margin: 0 auto;
-  padding: 26px 20px 32px 20px;
+  padding: 27px 20px 32px 20px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -259,7 +260,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 37px 10px 125px 0;
+    padding: 37px 10px 123px 0;
   }
 }
 
@@ -301,25 +302,24 @@
 
 .application__list {
   margin: 0;
-  padding: 30px 0 19px 0;
+  padding: 32px 0 19px 0;
   height: 100%;
   list-style: none;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: center;
   gap: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 0 33px 0;
+    padding: 46px 7px 33px 0;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0 51px 0;
-    align-items: end;
+    padding: 65px 0 53px 0;
+
     gap: 34px;
   }
 }
@@ -328,19 +328,23 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    &:nth-child(2n),
+    &:nth-child(2n) {
+      padding-top: 6px;
+    }
+
     &:nth-child(3n) {
-      padding-bottom: 3px;
+      padding-top: 12px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &:nth-child(2n) {
-      padding-right: 3px;
+      padding-top: 9px;
     }
 
     &:nth-child(3n) {
-      padding-bottom: 3px;
+      padding-left: 3px;
+      padding-top: 9px;
     }
   }
 }

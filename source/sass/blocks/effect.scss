@@ -38,7 +38,7 @@
 .effect__title {
   @media (min-width: $tablet-width) {
     margin: 0 142px 0 0;
-    padding: 98px 0 0 20px;
+    padding: 96px 0 0 20px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -46,7 +46,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 115px;
+    padding-top: 112px;
+    padding-left: 0;
     line-height: 30px;
   }
 }
@@ -74,9 +75,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 0 26px 0;
+    padding: 26px 0 31px 0;
     font-size: 18px;
     line-height: 30px;
+
+    word-spacing: 1px;
+  }
+}
+
+.effect__text-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
