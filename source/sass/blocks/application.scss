@@ -156,6 +156,18 @@
   }
 }
 
+.application__wrapper--form-page {
+  padding: 6px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 0 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 0 94px 0;
+  }
+}
+
 .application__wrapper--form-page .application__header {
   margin: 0 auto;
   padding-bottom: 24px;
@@ -183,14 +195,8 @@
 }
 
 .application__wrapper--form-page .application__intro--mod-text {
-  padding: 6px 0 20px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0  68px 0;
-  }
-
   @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 747px;
   }
 }
 
