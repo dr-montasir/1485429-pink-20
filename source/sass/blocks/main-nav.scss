@@ -204,9 +204,15 @@
   @media (min-width: $desktop-width) {
     border-color: $white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $cerise;
       border-color: $cerise;
+    }
+
+    &:active {
+      color: $white--030;
+      border-color: $white--030;
     }
   }
 }

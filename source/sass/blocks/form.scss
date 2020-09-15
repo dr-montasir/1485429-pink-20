@@ -95,7 +95,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 28px 56px 0 56px;
+    padding: 28px 50px 0 56px;
   }
 }
 
@@ -103,7 +103,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 74px;
   }
 }
 
@@ -194,7 +194,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 58px 41px 58px;
+    padding: 27px 58px 34px 58px;
   }
 }
 
@@ -262,9 +262,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 371px;
+    width: 376px;
 
-    background-position: 330px center, right center;
+    background-position: 332px center, right center;
   }
 }
 
@@ -296,7 +296,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 58px 0;
+    padding: 0 0 53px 0;
+
+    gap: 19px;
   }
 }
 
@@ -325,7 +327,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 336px;
+    width: 335px;
   }
 }
 
@@ -353,10 +355,14 @@
   @media (min-width: $desktop-width) {
     &--place-1 {
       order: 1;
+
+      padding-right: 50px;
     }
 
     &--place-2 {
       order: 4;
+
+      padding-right: 50px;
     }
 
     &--place-3 {
@@ -369,10 +375,14 @@
 
     &--place-5 {
       order: 3;
+
+      padding-left: 30px;
     }
 
     &--place-6 {
       order: 6;
+
+      padding-left: 30px;
     }
   }
 }
@@ -388,8 +398,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 35px 0 0 45px;
-    width: 265px;
+    padding: 34px 0 0 0;
+    width: 266px;
   }
 }
 
@@ -403,7 +413,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29px 0 0 68px;
+    padding: 24px 0 2px 68px;
     width: 291px;
   }
 }
@@ -532,7 +542,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 124px;
+    min-height: 128px;
   }
 }
 
@@ -587,6 +597,10 @@
   @media (min-width: $tablet-width) {
     padding: 10px 0 48px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 46px 0;
+  }
 }
 
 .form__achievement .form__legend {
@@ -599,7 +613,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 50px 0;
+    padding: 0 0 50px 50px;
   }
 }
 
@@ -629,7 +643,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 0 2px 0;
+    padding: 16px 0 2px 0;
 
     width: 940px;
   }
@@ -651,8 +665,19 @@
 .form__note-text {
   line-height: 30px;
   text-transform: uppercase;
+
+  font-size: 14px;
 }
 
 .form__note-symbol {
   color: $cerise;
+}
+
+.form__must-fill {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: center;
+  }
 }
