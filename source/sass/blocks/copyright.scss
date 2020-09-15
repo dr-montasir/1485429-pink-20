@@ -16,9 +16,12 @@
 }
 
 .copyright__text {
-  padding-top: 5px;
+  padding-top: 10px;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
   }
 }

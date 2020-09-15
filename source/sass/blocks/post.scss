@@ -35,6 +35,15 @@
 
 .post--panorama img {
   width: 100%;
+  min-height: 137px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 506px;
+  }
 }
 
 .post__panorama-sticker {
@@ -62,17 +71,34 @@
   vertical-align: middle;
 
   margin: 0 20px;
-  padding: 12px 20px 12px 19px;
+  padding: 5px 20px 7px 19px;
 
   font-weight: 700;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 24px;
 
   background-color: $cerise;
   color: $white;
 
   @media (min-width: $desktop-width) {
     margin: 0 10px;
+  }
+}
+
+.post--no-panorama .post__photo {
+  width: 100%;
+}
+
+.post--no-panorama img {
+  width: 100%;
+  min-height: 180px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
   }
 }
 
@@ -91,15 +117,26 @@
   }
 }
 
+.post__author {
+  font-weight: 700;
+}
+
+.post__time {
+  font-weight: 300;
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+
 .post--panorama .post__body {
   background-color: $whitesmoke;
   margin: 0 20px;
-  padding: 23px 0;
+  padding: 17px 0 21px 0;
 
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 0 24px 0;
+    padding: 23px 0 26px 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +145,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 16px 0 2px 0;
+    padding: 22px 0 2px 0;
     width: 940px;
   }
 }
@@ -121,7 +158,8 @@
 .post--panorama .post__description {
   order: 3;
 
-  padding-bottom: 8px;
+  padding-top: 0;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -133,21 +171,30 @@
   order: 2;
 
   padding-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .post__header {
-  padding-top: 23px;
+  padding-top: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 22px;
   }
 }
 
 .post__like {
-  padding-bottom: 24px;
+  padding-bottom: 21.5px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 29px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+    margin-bottom: 34px;
   }
 }
 
@@ -157,6 +204,8 @@
   padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+
     min-height: 48px;
     padding-bottom: 12px;
   }

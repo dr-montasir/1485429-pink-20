@@ -6,6 +6,12 @@
   display: grid;
   grid-template-rows: min-content 1fr;
 
+  background-color: $bunting;
+
+  &--closed {
+    background-color: transparent;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 10px;
     padding-right: 10px;
@@ -13,6 +19,8 @@
     width: 940px;
 
     grid-template-columns: min-content 1fr;
+
+    background-color: transparent;
   }
 }
 
@@ -38,7 +46,7 @@
 }
 
 .main-nav__toggle {
-  margin: 23px 0;
+  margin: 24px 0;
 
   width: 23px;
   height: 23px;
@@ -58,12 +66,18 @@
 }
 
 .main-nav--closed .main-nav__toggle {
+  margin: 21px 0;
+
   width: 50px;
   height: 24px;
 
   cursor: pointer;
 
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0;
+  }
 
   &:hover {
     background-position: 0 -29px;
@@ -145,7 +159,7 @@
 
   color: $white;
 
-  padding: 23px 20px;
+  padding: 15px 20px;
 
   text-align: center;
   text-transform: uppercase;
@@ -153,15 +167,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-
-  @media (min-width: $desktop-width) {
-    padding: 19px 0;
-
-    font-weight: 400;
-    line-height: 18px;
-
-    color: $white;
-  }
 
   &:hover {
     color: $cerise;
@@ -174,16 +179,40 @@
   &:active {
     color: $cerise--030;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 0 9px 0;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+
+    font-weight: 400;
+    line-height: 18px;
+
+    color: $white;
+
+    text-transform: none;
+
+    &:active {
+      color: $white--030;
+    }
+  }
 }
 
 .main-nav__list-item--active a {
   color: $white;
 
   @media (min-width: $desktop-width) {
-    box-shadow: 0 2px 0 0 $white;
+    border-color: $white;
 
-    &:hover {
-      box-shadow: 0 2px 0 0 $cerise;
+    &:hover,
+    &:focus {
+      color: $cerise;
+      border-color: $cerise;
+    }
+
+    &:active {
+      color: $white--030;
+      border-color: $white--030;
     }
   }
 }

@@ -1,9 +1,6 @@
 /* Comments */
 
 .comments {
-  // outline: 5px solid rgba(blue, 0.35);
-  // outline-offset: -5px;
-
   margin: 0;
   padding: 0;
 }
@@ -11,7 +8,7 @@
 .comments__wrapper {
   margin: 0 auto;
 
-  padding: 0 20px 24px 20px;
+  padding: 0 20px 22px 20px;
 
   text-align: center;
 
@@ -20,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 10px 32px 10px;
+    padding: 68px 10px 26px 10px;
     width: 940px;
   }
 }
@@ -29,11 +26,11 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding: 101px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
+    padding: 114px 0 0 0;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 0;
@@ -54,8 +51,7 @@
 
 .comments__user {
   margin: 0;
-  padding-top: 42px;
-  padding-bottom: 15px;
+  padding: 42px 0 13px 0;
 
   order: 1;
 
@@ -65,15 +61,14 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
-    padding-bottom: 3px;
+    padding: 35px 0 0 0;
 
     order: 2;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 2px;
+    padding: 35px 0 2px 0;
 
     font-size: 24px;
   }
@@ -103,13 +98,17 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }
 
 .comments__arrow {
   display: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    margin-top: 26px;
 
     &--left {
       order: 1;
@@ -147,10 +146,10 @@
 }
 
 .comments__control {
-  padding-top: 40px;
+  padding: 36px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 46px;
+    padding: 40px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,13 +10,15 @@
   @media (min-width: $tablet-width) {
     max-width: 700px;
     padding-top: 37px;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 940px;
     padding-top: 35px;
     padding-bottom: 37px;
+
+    margin-bottom: 31px;
   }
 }
 
@@ -32,10 +34,11 @@
 
 .editor__photo {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 18px 20px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    padding: 20px;
     width: 300px;
   }
 

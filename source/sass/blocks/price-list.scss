@@ -1,8 +1,8 @@
 /* Price List */
 
 .price-list {
-  padding-top: 118px;
-  padding-bottom: 50px;
+  padding-top: 120px;
+  padding-bottom: 48px;
 
   background-image: url("../img/bg-triangle-white-mobile.svg");
   background-repeat: no-repeat;
@@ -11,13 +11,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 115px;
-    padding-bottom: 70px;
+    padding-bottom: 66px;
 
     background-image: url("../img/bg-triangle-white-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 157px;
+    padding-top: 165px;
     padding-bottom: 96px;
 
     background-image: url("../img/bg-triangle-white.svg");

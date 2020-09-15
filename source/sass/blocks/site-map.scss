@@ -22,6 +22,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: -2px;
       height: 123px;
       background-image: url("../img/bg-map-triangle-white-desktop.svg");
     }
@@ -46,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 298px;
+    height: 397px;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {

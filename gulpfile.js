@@ -12,6 +12,8 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 // Styles
 
@@ -23,12 +25,13 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -44,7 +47,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -53,11 +56,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
-}
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
+};
 
 // Image minification (imagemin)
 
@@ -100,13 +99,26 @@ exports.webp = webpFormat;
 // Sprite for SVG
 
 const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+  return gulp.src("source/img/icon/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
-}
+};
 
 exports.sprite = sprite;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build")
+   );
+};
+
+exports.html = html;
 
 // Copy
 
@@ -142,7 +154,24 @@ const build = gulp.series(
   copy,
   styles,
   compress,
-  sprite
+  sprite,
+  html
 );
 
 exports.build = build;
+
+// Start
+
+const start = gulp.series(
+  build,
+  server,
+  watcher
+);
+
+exports.start = start;
+
+// Default
+
+exports.default = gulp.series(
+  build, server, watcher
+);
